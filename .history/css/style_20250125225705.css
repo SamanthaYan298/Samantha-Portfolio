@@ -846,9 +846,9 @@ footer * {
     }
 
     .btn {
-        width: 9rem;
+        width: 9.5rem;
         font-size: 1rem;
-        padding: 0.8rem 0.5rem;
+        padding: 0.8rem 1rem;
     }
 
     .ribbon {
@@ -930,6 +930,13 @@ footer * {
     .footer-icons img {
         width: 25%;
         height: auto;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 360) {
+    .buttons {
+        display: flex;
+        flex-direction: column;
     }
 }
 

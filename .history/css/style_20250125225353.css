@@ -746,13 +746,13 @@ footer * {
 
     .buttons {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap: 1rem;
         align-items: center;
     }
 
     .btn {
-        width: 10.5rem;
+        width: 6rem;
         font-size: 1rem;
     }
 
@@ -846,9 +846,9 @@ footer * {
     }
 
     .btn {
-        width: 9rem;
+        width: 9.5rem;
         font-size: 1rem;
-        padding: 0.8rem 0.5rem;
+        padding: 0.8rem 1rem;
     }
 
     .ribbon {

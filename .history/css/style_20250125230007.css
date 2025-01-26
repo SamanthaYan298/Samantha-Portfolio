@@ -846,9 +846,9 @@ footer * {
     }
 
     .btn {
-        width: 9rem;
+        width: 9.5rem;
         font-size: 1rem;
-        padding: 0.8rem 0.5rem;
+        padding: 0.8rem 0.8rem;
     }
 
     .ribbon {
