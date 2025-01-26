@@ -334,7 +334,7 @@
 .display {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 5rem;
     align-items: center;
     justify-content: center;
@@ -366,7 +366,7 @@
 .projects-info h3 {
     font-family: var(--heading-font);
     font-weight: var(--heading-semiBold);
-    font-size: var(--font-size-40);
+    font-size: var(--font-size-30);
 }
 
 .types {
@@ -870,8 +870,8 @@ footer * {
     }
 
     .star_small {
-        top: 17rem;
-        left: 15rem;
+        top: 18rem;
+        left: 16.5rem;
     }
 
     .hamburger img {
@@ -1116,7 +1116,7 @@ footer * {
 
     .display {
         flex-direction: column;
-        gap: 3rem;
+        gap: 6rem;
         margin-bottom: 5rem;
     }
 
@@ -1145,6 +1145,13 @@ footer * {
         flex-direction: row;
         align-items: center;
         text-align: center;
+    }
+
+    .reverse {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        flex-direction: row-reverse;
+        align-items: center;
     }
 
     .projects {
