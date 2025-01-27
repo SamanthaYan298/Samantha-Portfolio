@@ -191,7 +191,7 @@
     text-decoration: none;
     text-align: center;
     color: black;
-    width: 11rem;
+    width: 10.5rem;
     background: var(--branding-pink);
     padding: 1rem 1.5rem;
     border-radius: 10px;
@@ -651,7 +651,7 @@ footer * {
     .tag {
         width: 9rem;
         font-size: 1rem;
-        padding: 0.8rem 0.7rem;
+        padding: 0.8rem 0.8rem;
     }
 
     .slogan {
