@@ -968,7 +968,7 @@ footer * {
 
     .blissy_mockup {
         display: block;
-        width: 70%;
+        width: 100%;
     }
 
     /* .curve {
@@ -1063,7 +1063,7 @@ footer * {
     }
 
     .footer-icons img {
-        width: 8%;
+        width: 10%;
     }
 
     .glow-button {
