@@ -144,7 +144,7 @@
     flex-direction: column;
     width: 100%;
     margin-left: 7rem;
-    margin-top: 4.5rem;
+    margin-top: 3.5rem;
     text-align: left;
     align-items: flex-start;
     background: transparent;
@@ -968,7 +968,6 @@ footer * {
 
     .blissy_mockup {
         display: block;
-        width: 70%;
     }
 
     /* .curve {
@@ -1063,7 +1062,7 @@ footer * {
     }
 
     .footer-icons img {
-        width: 8%;
+        width: 10%;
     }
 
     .glow-button {

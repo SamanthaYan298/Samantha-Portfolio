@@ -144,7 +144,7 @@
     flex-direction: column;
     width: 100%;
     margin-left: 7rem;
-    margin-top: 4.5rem;
+    margin-top: 2rem;
     text-align: left;
     align-items: flex-start;
     background: transparent;
@@ -193,7 +193,7 @@
     color: black;
     width: 10.2rem;
     background: var(--branding-pink);
-    padding: 1rem 1.5rem;
+    padding: 0.8rem 1.5rem;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(102, 91, 139, 0.3);
     transition: background 0.3s ease;
@@ -811,7 +811,6 @@ footer * {
     .blissy_banner {
         display: flex;
         margin-left: 0;
-        margin-top: 1rem;
         justify-content: center;
         align-items: center;
     }
@@ -877,7 +876,7 @@ footer * {
 
     .small_mockup {
         display: block;
-        width: 100%;
+        width: 70%;
         background: transparent;
     }
 
@@ -968,7 +967,6 @@ footer * {
 
     .blissy_mockup {
         display: block;
-        width: 70%;
     }
 
     /* .curve {
@@ -1024,7 +1022,7 @@ footer * {
     }
 
     .glow-button:hover {
-        right: -110px;
+        right: -10px;
     }
 
 }
@@ -1063,7 +1061,7 @@ footer * {
     }
 
     .footer-icons img {
-        width: 8%;
+        width: 10%;
     }
 
     .glow-button {
@@ -1074,16 +1072,6 @@ footer * {
         right: -110px;
     }
 
-}
-
-@media (min-width: 1084px) and (max-width: 1441px) {
-    .glow-button {
-        right: -160px;
-    }
-
-    .glow-button:hover {
-        right: -140px;
-    }
 }
 
 @media (min-width: 1441px) and (max-width: 1919px) {
