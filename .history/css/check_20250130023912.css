@@ -1,0 +1,27 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    width: 10.2rem;
+    background: var(--branding-purple);
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(102, 91, 139, 0.3);
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: var(--branding-light-pink);
+    color: black;
+}
