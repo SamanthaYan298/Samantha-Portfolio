@@ -720,7 +720,6 @@ footer * {
     .banner {
         display: flex;
         padding-left: 12%;
-        height: 140vh;
     }
 
     .buttons {
@@ -862,8 +861,13 @@ footer * {
         margin-top: 0rem;
     }
 
+    .curve-section {
+        top: -1rem;
+    }
+
     .curve {
-        top: 2rem;
+        top: 5rem;
+        background-color: #575195;
     }
 
     .display h4 {
@@ -873,7 +877,7 @@ footer * {
 
     .tools {
         display: flex;
-        margin: 4rem 50px; 
+        margin: 8rem 50px; 
         align-items: center;
         justify-content: center;
     }
@@ -1051,7 +1055,7 @@ footer * {
     .banner {
         display: flex;
         padding-left: 5%;
-        height: 100vh;
+        height: 80vh;
         margin-top: 0;
     }
 

@@ -720,7 +720,6 @@ footer * {
     .banner {
         display: flex;
         padding-left: 12%;
-        height: 140vh;
     }
 
     .buttons {
@@ -873,7 +872,7 @@ footer * {
 
     .tools {
         display: flex;
-        margin: 4rem 50px; 
+        margin: 8rem 50px; 
         align-items: center;
         justify-content: center;
     }
@@ -1051,7 +1050,7 @@ footer * {
     .banner {
         display: flex;
         padding-left: 5%;
-        height: 100vh;
+        height: 80vh;
         margin-top: 0;
     }
 

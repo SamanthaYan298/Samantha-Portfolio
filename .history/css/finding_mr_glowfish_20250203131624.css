@@ -1077,7 +1077,7 @@ footer * {
 
     .small_mockup {
         display: block;
-        width: 140%;
+        width: 100%;
         background: transparent;
     }
 
@@ -1169,7 +1169,7 @@ footer * {
 
     .small_mockup {
         display: block;
-        width: 120%;
+        width: 80%;
         background: transparent;
     }
 
