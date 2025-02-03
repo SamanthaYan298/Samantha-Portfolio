@@ -1144,6 +1144,18 @@ footer * {
     .floating-star {
         display: none;
     }
+
+    .footer-icons img {
+        width: 50px;
+        height: auto;
+    }
+
+    .footer-icons a {
+        display: flex;
+        flex-direction: row;
+        width: 50px;
+        height: 50px;
+    }
     
     .footer-icons img {
         width: 40px;
@@ -1214,18 +1226,6 @@ footer * {
         width: 35%;
         height: auto;
         margin-left: 12.5rem;
-    }
-    
-    .footer-icons img {
-        width: 50px;
-        height: auto;
-    }
-
-    .footer-icons a {
-        display: flex;
-        flex-direction: row;
-        width: 50px;
-        height: 50px;
     }
 
 }

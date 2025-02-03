@@ -1040,9 +1040,22 @@ footer * {
         width: 21rem;
     }
 
+
+    .footer-icons img {
+        width: 40px;
+        height: auto;
+    }
+
     .footer-icons {
         display: flex;
         max-width: none;
+    }
+
+    .footer-icons a {
+        display: flex;
+        flex-direction: row;
+        width: 40px;
+        height: 40px;
     }
 
     .glow-button {
@@ -1144,18 +1157,6 @@ footer * {
     .floating-star {
         display: none;
     }
-    
-    .footer-icons img {
-        width: 40px;
-        height: auto;
-    }
-
-    .footer-icons a {
-        display: flex;
-        flex-direction: row;
-        width: 40px;
-        height: 40px;
-    }
 }
 
 @media (min-width: 425px) and (max-width: 768px) {
@@ -1214,18 +1215,6 @@ footer * {
         width: 35%;
         height: auto;
         margin-left: 12.5rem;
-    }
-    
-    .footer-icons img {
-        width: 50px;
-        height: auto;
-    }
-
-    .footer-icons a {
-        display: flex;
-        flex-direction: row;
-        width: 50px;
-        height: 50px;
     }
 
 }

@@ -160,6 +160,15 @@
     padding-bottom: 4rem;
 }
 
+/* .blissy_logo {
+    background: transparent;
+    width: 100%;
+    height: auto;
+    align-items: flex-start;
+    font-weight: var(--paragraph-light);
+    padding-top: 2.5rem;
+} */
+
 .can_name {
     background: transparent;
     color: var(--branding-purple);
@@ -217,7 +226,7 @@
     z-index: 1;
     opacity: 0;
     animation: fadeInUp 2.5s ease forwards;
-    top: 4rem;
+    top: 6rem;
 }
 
 /* Curve Grow */
@@ -249,7 +258,7 @@
     z-index: 2;
     background: transparent;
     gap: 10rem;
-    margin: 8rem 240px; 
+    margin: 8rem 240px 2rem 240px; 
 }
 
 .slogan {
@@ -287,15 +296,22 @@
 .design_concept {
     display: flex;
     flex-direction: row;
-    padding: 1rem 0;
-    background-color: var(--branding-light-pink);
-    margin-bottom: 8rem;
-    gap: 4rem;
-    align-items: center;
-    justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 
-.design_concept h3 {
+.separator {
+    width: 100%;
+    background: transparent;
+    margin-bottom: 1rem;
+}
+
+.project_logo {
+    position: absolute;
+    transform: scale(0.4);
+}
+
+/* .design_concept h3 {
     font-size: var(--font-size-40);
     font-weight: var(--heading-semiBold);
     color: var(--branding-purple);
@@ -308,203 +324,32 @@
     font-size: var(--font-size-20);
     margin-top: 1rem;
     padding: 0 3rem;
-}
-
-.glowfish {
-    display: block;
-    align-items: flex-start;
-    justify-content: left;
-    background: transparent;
-    width: 37%;
-    padding-right: 80px;
-}
-
-.description {
-    background: transparent;
-    width: 59%;
-    padding-right: 200px;
-}
-
-/* Demo Video */
-.demo h4 {
-    font-size: var(--font-size-24);
-    font-weight: var(--heading-semiBold);
-    font-family: var(--heading-font);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1rem;
-}
-
-.demo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.demo p {
-    font-family: var(--paragraph-font);
-    font-size: 1rem;
-    margin-top: 1rem;
-}
+} */
 
 /* Project Showcase */
 
 .project_showcase {
     text-align: center;
     align-items: center;
-    padding: 6rem 0;
 }
 
-.project_showcase h3 {
-    font-size: var(--font-size-40);
-    font-weight: var(--heading-semiBold);
-    font-family: var(--heading-font);
-    color: var(--branding-purple);
-    text-align: left;
-    margin: 2rem 240px;
-}
-
-.design_choices {
-    display: flex;
-    flex-direction: column;
-    padding: 3rem 0;
-    background-color: var(--branding-purple);
-    gap: 2rem;
-    align-items: center;
-    justify-content: center;
-}
-
-.design_choices p {
-    background-color: transparent;
-    font-family: var(--paragraph-font);
-    font-size: var(--font-size-18);
-    width: 60%;
-    color: white;
-    margin: 0 240px;
-    text-align: left;
-}
-
-.sketch {
-    background: transparent;
-    width: 60%;
-}
-
-/* Characters */
-
-.characters {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    background: transparent;
-    margin: 3.5rem 240px;
-}
-
-.characters_intro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: right;
-    margin-bottom: 2rem;
-    gap: 3rem;
-    width: 40%;
-}
-
-.characters_intro h4 {
-    font-family: var(--heading-font);
-    font-weight: var(--heading-semiBold);
+.project_showcase h4 {
     font-size: var(--font-size-24);
-    color: var(--branding-purple);
-}
-
-.details {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    width: 60%;
-}
-
-.details p {
-    font-family: var(--paragraph-font);
-    font-size: var(--font-size-18);
-    font-weight: var(--paragraph-regular);
-    margin-bottom: 1rem;
-}
-
-.scenes img {
-    width: 100%;
-    height: auto;
-    padding-top: 1rem;
-}
-
-#sailfish {
-    padding-top: 8rem;
-}
-
-.illustration {
-    width: 100%;
-    height: auto;
-    padding-right: 3.5rem;
-    padding-top: 3rem;
-}
-
-.equipments {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-self: center;
-    background: transparent;
-    margin: 2rem 240px 4.5rem 240px;
-    text-align: center;
-}
-
-.equipments h4{
-    font-family: var(--heading-font);
     font-weight: var(--heading-semiBold);
-    font-size: var(--font-size-24);
-    color: var(--branding-purple);
-}
-
-.equipments img {
-    display: block;
-    margin: 2rem auto 1rem auto;
-    width: 90%;
-    border: 2px solid var(--branding-purple);
-    border-radius: 50px;
-}
-
-.storyline {
+    font-family: var(--heading-font);
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.storyline p {
-    font-family: var(--paragraph-font);
-    font-size: var(--font-size-18);
-    font-weight: var(--paragraph-regular);
-    padding-right: 1rem;
-}
-
-.btn {
-    text-decoration: none;
-    color: white;
-    width: 10.2rem;
-    background: var(--branding-purple);
-    padding: 0.8rem 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(102, 91, 139, 0.3);
-    transition: background 0.3s ease;
-    text-align: center;
-}
-
-.btn:hover {
-    background: var(--branding-light-pink);
-    color: black;
+.highlight {
+    background-image: linear-gradient(90deg, #575195, #F9B5C3);
+    font-size: var(--font-size-24);
+    font-weight: var(--heading-semiBold);
+    font-family: var(--heading-font);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 /* Pineapple Flavor */
@@ -806,8 +651,8 @@ footer * {
         position: relative;
         z-index: 2;
         background: transparent;
-        gap: 5rem;
-        margin: 6rem 2rem; 
+        gap: 2rem;
+        margin: 6rem 2rem 1rem 2rem; 
     }
 
     .banner {
@@ -818,9 +663,9 @@ footer * {
         align-items: center;
     }
 
-    .brand_name {
-        font-size: 2rem;
-    }
+    /* .blissy_logo {
+        width: 60%;
+    } */
 
     .tags {
         display: flex;
@@ -843,129 +688,32 @@ footer * {
     .project_intro p {
         font-size: var(--font-size-16);
     }
-    
-    .design_concept {
-        padding: 0;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+
+    .separator {
+        width: 100%;
     }
+
+    /* .design_concept h3 {
+        font-size: var(--font-size-30);
+    } */
 
     .design_concept p {
         font-size: var(--font-size-16);
         padding: 0 1rem;
     }
 
-    .characters {
-        margin: 2rem 2rem;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .characters_intro, .details {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .characters_intro h4 {
-        text-align: center;
+    .project_showcase h4,.highlight {
         font-size: var(--font-size-18);
-    }
-
-    .project_showcase h3 {
-        font-size: var(--font-size-30);
-    }
-
-    .characters_intro {
-        width: 100%;
-    }
-
-    .details {
-        width: 100%;
-    }
-
-    .details p {
-        font-size: var(--font-size-16);
-    }
-
-    .illustration {
-        padding-right: 0;
-        padding-top: 1rem;
     }
 
     .mockup {
         width: 80%;
         height: auto;
+        padding-bottom: 0.5rem;
     }
 
     .small_mockup {
         padding-bottom: 0.5rem;
-    }
-
-    .glowfish {
-        display: none;
-    }
-
-    .description {
-        padding: 0;
-        width: 100%;
-        margin: 4rem 2rem;
-    }
-
-    .description h3 {
-        font-size: var(--font-size-30);
-    }
-
-    .description p {
-        font-size: 1rem;
-    }
-
-    .demo {
-        padding: 0 2rem; 
-    }
-
-    .video-container {
-        width: 100%;
-        max-width: 1000px;
-        height: auto;
-        aspect-ratio: 16 / 9;
-        display: block;
-        margin: auto;
-    }
-
-    .project_showcase h3 {
-        margin: 2rem 2rem;
-        text-align: center;
-    }
-
-    .project_showcase {
-        padding: 1rem 0;
-    }
-
-    .design_choices p {
-        margin: 0 2rem;
-        width: 60%;
-        font-size: var(--font-size-16);
-    }
-
-    .equipments h4 {
-        font-size: var(--font-size-18);
-        margin: 0 2rem;
-    }
-
-    .equipments {
-        margin: 0 2rem 3rem 2rem;
-    }
-
-    .equipments img {
-        border-radius: 20px;
-    }
-    
-    .storyline p {
-        font-size: var(--font-size-16);
-    }
-
-    .storyline {
-        display: none;
     }
 
     /* Animation */
@@ -1072,13 +820,18 @@ footer * {
         height: 100vh;
     }
 
+    .intro {
+        gap: 2rem;
+        margin: 6rem 2rem 1rem 2rem;
+    }
+
     .project_mockup {
         display: none;
     }
 
     .small_mockup {
         display: block;
-        width: 140%;
+        width: 120%;
         background: transparent;
     }
 
@@ -1112,15 +865,15 @@ footer * {
         top: -5rem;
     }
 
+    .design_concept {
+        padding: 0;
+        margin: 2rem 0;
+    }
+
     .hamburger img {
         width: 35%;
         height: auto;
         margin-left: 11rem;
-    }
-
-    .intro {
-        gap: 2rem;
-        margin: 6rem 2rem 1rem 2rem;
     }
 
     .footer {
@@ -1144,7 +897,7 @@ footer * {
     .floating-star {
         display: none;
     }
-    
+
     .footer-icons img {
         width: 40px;
         height: auto;
@@ -1173,7 +926,7 @@ footer * {
 
     .small_mockup {
         display: block;
-        width: 120%;
+        width: 100%;
         background: transparent;
     }
 
@@ -1215,18 +968,6 @@ footer * {
         height: auto;
         margin-left: 12.5rem;
     }
-    
-    .footer-icons img {
-        width: 50px;
-        height: auto;
-    }
-
-    .footer-icons a {
-        display: flex;
-        flex-direction: row;
-        width: 50px;
-        height: 50px;
-    }
 
 }
 
@@ -1265,14 +1006,6 @@ footer * {
         margin-top: 0;
     }
 
-    .can_name {
-        font-size: 2rem
-    }
-
-    .brand_name {
-        font-size: 3rem;
-    }
-
     .project_banner {
         display: flex;
         justify-content: center;
@@ -1282,6 +1015,14 @@ footer * {
     /* .blissy_logo {
         width: 60%;
     } */
+
+    .can_name {
+        font-size: 2rem
+    }
+
+    .brand_name {
+        font-size: 3rem;
+    }
 
     .project_banner p {
         font-size: var(--font-size-20);
@@ -1308,45 +1049,16 @@ footer * {
         display: flex;
         flex-direction: row;
         gap: 5rem;
-        margin: 6rem 50px;
+        margin: 6rem 50px 1rem 50px;
     }
 
     .slogan {
         width: 100%;
     }
-    
-    .video-container {
-        width: 100%;
-        max-width: 1000px;
-        height: auto;
-        aspect-ratio: 16 / 9;
-        display: block;
-        margin: auto;
-        padding: 0 50px;
-    }
 
     .design_concept {
-        gap: 3rem;
-    }
-
-    .glowfish {
-        padding-right: 50px;
-    }
-
-    .description {
-        padding-right: 0px;
-    }
-
-    .characters {
-        margin: 3.5rem 100px;
-    }
-
-    .characters_intro {
-        padding-right: 2rem;
-    }
-
-    .equipments {
-        margin: 2rem 100px;
+        padding: 0;
+        margin: 0;
     }
 
     .footer {
@@ -1392,41 +1104,12 @@ footer * {
 
     .intro {
         gap: 5rem;
-        margin: 6rem 100px; 
+        margin: 6rem 100px 1rem 100px; 
     }
 
     .design_concept {
-        padding: 3rem 0;
-    }
-
-    .description {
-        width: 70%;
-        padding-right: 50px;
-    }
-
-    .demo {
-        padding: 0 100px; 
-    }
-
-    .video-container {
-        width: 100%;
-        max-width: 1000px;
-        height: auto;
-        aspect-ratio: 16 / 9;
-        display: block;
-        margin: auto;
-    }
-
-    .characters {
-        margin: 3.5rem 100px;
-    }
-
-    #sailfish {
-        padding-top: 6rem;
-    }
-
-    .equipments {
-        margin: 4.5rem 100px;
+        padding: 0;
+        margin: 0;
     }
 
     .footer {
@@ -1474,19 +1157,6 @@ footer * {
 }
 
 @media (min-width: 1920px) and (max-width: 2560px) {
-
-    .demo {
-        margin: 0 240px; 
-    }
-
-    .video-container {
-        width: 100%;
-        max-width: 1400px;
-        height: auto;
-        aspect-ratio: 16 / 9;
-        display: block;
-        margin: auto;
-    }
 
     .footer {
         background-size: 110%
