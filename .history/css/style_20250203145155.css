@@ -838,7 +838,7 @@ footer * {
     }
 
     .footer-content {
-        max-width: 100%;
+        max-width: 50%;
     }
 
     .footer-content h2 {
@@ -847,6 +847,12 @@ footer * {
 
     .footer-content p {
         width: 21rem;
+    }
+
+    .footer-icons {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
     }
 
     .glow-button {
@@ -957,13 +963,6 @@ footer * {
     .floating-star {
         display: none;
     }
-
-    .footer-icons {
-        display: flex;
-        gap: 5px;
-        justify-content: flex-start;
-        width: 100%;
-    }
         
     .footer-icons img {
         width: 40px;
@@ -972,8 +971,9 @@ footer * {
 
     .footer-icons a {
         display: flex;
-        width: 40px;
-        height: 40px;
+        flex-wrap: wrap;
+        width: 30px;
+        height: 30px;
     }
 }
 
@@ -1039,12 +1039,6 @@ footer * {
         height: auto;
     }
 
-    .footer-icons {
-        display: flex;
-        gap: 5px;
-        justify-content: flex-start;
-        width: 100%;
-    }
         
     .footer-icons img {
         width: 50px;
