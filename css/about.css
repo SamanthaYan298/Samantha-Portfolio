@@ -168,7 +168,7 @@
     width: 35%;
     height: auto;
     background: transparent;
-    border-radius: 120px 20px 120px 20px;
+    border-radius: 120px 5px 120px 5px;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -806,7 +806,7 @@ footer * {
     .samantha {
         width: 70%;
         height: auto;
-        border-radius: 100px 15px 100px 15px;
+        border-radius: 100px 5px 100px 5px;
     }
 
     .name {
@@ -934,7 +934,7 @@ footer * {
     .samantha {
         width: 60%;
         height: auto;
-        border-radius: 100px 15px 100px 15px;
+        border-radius: 100px 5px 100px 5px;
     }
 
     .name {
@@ -1065,7 +1065,7 @@ footer * {
     .samantha {
         width: 40%;
         height: auto;
-        border-radius: 100px 15px 100px 15px;
+        border-radius: 100px 5px 100px 5px;
     }
 
     .name {

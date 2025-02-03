@@ -27,7 +27,7 @@
         <a href="index.html"><img class="logo" alt="logo" src="./images/logo.png" /></a>
         <ul class="nav-links">
             <li><a href="index.html" class="home-link">Home</a></li>
-            <li><a href="projects.html" class="projects-link">Projects</a></li>
+            <!-- <li><a href="projects.html" class="projects-link">Projects</a></li> -->
             <li><a href="about.html" class="about-link">About</a></li>
         </ul>
     </header>
@@ -41,7 +41,7 @@
             <div class="menu-links">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.html" class="projects-link">Projects</a></li>
+                    <!-- <li><a href="projects.html" class="projects-link">Projects</a></li> -->
                     <li><a href="about.html" class="about-link">About</a></li>
                 </ul>
             </div>
@@ -56,7 +56,7 @@
             <h1 class="name"><span class="highlight">I am</span> Samantha Yan</h1>
             <p class="position">Graphic Designer | UI & UX Designer</p>
             <div class="buttons">
-                <a href="projects.html" class="btn">See All Projects</a>
+                <a href="#projects" class="btn">See All Projects</a>
                 <a href="about.html" class="btn">Contact Me</a>
             </div>
         </div>
@@ -77,7 +77,23 @@
         </div>
     </section>
 
-    <section class="projects-showcase">
+    <section class="projects-showcase" id="projects">
+        <div class="display reverse fade-in responsive">
+            <div class="projects-info">
+                <div class="projects-info-layout">
+                    <h3>Clotho</h3>
+                    <h4 class="types">Wardrobe Assistant App</h4>
+                    <h4  class="roles">UI & UX Designer | Front-end Developer</h4>
+                    <p>February &ndash; May 2024</p>
+                </div>
+                <div class="buttons">
+                    <a href="clotho.html" class="btn">View Project</a>
+                </div>
+            </div>
+
+            <img src="./images/clotho_preview.png" alt="Clotho App" class="project-images"/>
+        </div>
+
         <div class="display fade-in responsive">
             <div class="projects-info">
                 <div class="projects-info-layout">
@@ -100,22 +116,14 @@
                     <h3>Finding<br>Mr. Glowfish</h3>
                     <h4 class="types">Children Interactive eBook</h4>
                     <h4  class="roles">Graphic Designer</h4>
-                    <p>October &mdash; December 2024</p>
+                    <p>October &ndash; December 2024</p>
                 </div>
-                <div class="buttons" id="message1">
-                    <a href="#projects" class="btn">View Project</a>
+                <div class="buttons">
+                    <a href="finding_mr_glowfish.html" class="btn">View Project</a>
                 </div>
             </div>
 
             <img src="./images/godot_preview.png" alt="Children's Book" class="project-images"/>
-
-            <!-- need to delete when finish -->
-            <div class="modal" id="coming1">
-                <div class="modal-content">
-                    <h2>Coming Soon!</h2>
-                </div>
-            </div>
-
         </div>
 
         <div class="display fade-in responsive">
@@ -127,7 +135,7 @@
                         Graphic and UI & UX Designer<br>
                         Front-end Developer
                     </h4>
-                    <p>September &mdash; December 2024</p>
+                    <p>September &ndash; December 2024</p>
                 </div>
                 <div class="buttons" id="message">
                     <a href="#projects" class="btn">View Project</a>
@@ -160,7 +168,7 @@
                 and together we can make your ideas come through.
             </p>
           <div class="footer-icons">
-            <a href="https://www.linkedin.com/in/samantha-yan-9647412b2/" target="_blank">
+            <a href="https://www.linkedin.com/in/samantha-yan-9647412b2/" target="_blank" rel="noopener noreferrer">
               <img src="./images/linkedin.png" alt="LinkedIn Icon" />
             </a>
             <a href="mailto:yisha-y@hotmail.com" aria-label="Send me an email">
@@ -171,7 +179,7 @@
         <nav class="footer-nav">
             <ul>
             <li><a href="index.html" class="home-link glow-button">Home</a></li>
-            <li><a href="projects.html" class="projects-link glow-button">Projects</a></li>
+            <!-- <li><a href="projects.html" class="projects-link glow-button">Projects</a></li> -->
             <li><a href="about.html" class="about-link glow-button">About</a></li>
             </ul>
         </nav>

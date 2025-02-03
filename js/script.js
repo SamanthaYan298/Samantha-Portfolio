@@ -90,22 +90,14 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+const viewProject = document.getElementById("message");
+const modal = document.getElementById("coming");
 
-const message1Btn = document.getElementById("message1");
-const message2Btn = document.getElementById("message");
-const modal1 = document.getElementById("coming1");
-const modal2 = document.getElementById("coming");
+viewProject.addEventListener("click", function(event) {
+    event.preventDefault();
+    modal.style.display = "flex";
 
-message1Btn.addEventListener("click", function() {
-    modal1.style.display = "flex";
     setTimeout(function() {
-        modal1.style.display = "none";
-    }, 2000);
-});
-
-message2Btn.addEventListener("click", function() {
-    modal2.style.display = "flex";
-    setTimeout(function() {
-        modal2.style.display = "none";
-    }, 2000);
+        modal.style.display = "none";
+    }, 3000);
 });

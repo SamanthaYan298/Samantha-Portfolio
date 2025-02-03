@@ -178,12 +178,22 @@
     font-weight: var(--heading-semiBold);
 }
 
+.can_name_small {
+    display: none;
+    font-weight: var(--heading-semiBold);
+}
+
+.brand_name {
+    background: transparent;
+    font-size: 4rem;
+}
+
 /* Tags */
 
 .tags {
     background: transparent;
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     font-family: var(--heading-font);
     font-weight: var(--heading-semiBold);
 }
@@ -293,6 +303,7 @@
 .separator {
     width: 100%;
     background: transparent;
+    margin-bottom: 1rem;
 }
 
 .project_logo {
@@ -678,11 +689,6 @@ footer * {
         font-size: var(--font-size-16);
     }
 
-    .design_concept {
-        padding: 0;
-        margin: 0;
-    }
-
     .separator {
         width: 100%;
     }
@@ -703,6 +709,7 @@ footer * {
     .mockup {
         width: 80%;
         height: auto;
+        padding-bottom: 0;
     }
 
     /* Animation */
@@ -824,6 +831,13 @@ footer * {
     }
 
     .can_name {
+        display: none;
+    }
+
+    .can_name_small {
+        background: transparent;
+        color: var(--branding-purple);
+        display: block;
         font-size: 1.438rem;
         padding-bottom: 1rem;
     }
@@ -846,11 +860,9 @@ footer * {
         top: -5rem;
     }
 
-    
-
     .design_concept {
         padding: 0;
-        margin: 0;
+        margin: 2rem 0;
     }
 
     .hamburger img {
@@ -906,11 +918,18 @@ footer * {
 
     .small_mockup {
         display: block;
-        width: 100%;
+        width: 80%;
         background: transparent;
     }
 
     .can_name {
+        display: none;
+    }
+
+    .can_name_small {
+        display: block;
+        background: transparent;
+        color: var(--branding-purple);
         font-size: 1.438rem;
         padding-bottom: 1rem;
     }
@@ -980,14 +999,14 @@ footer * {
         padding-left: 12%;
         align-items: center;
         justify-content: center;
-        height: 80vh;
+        height: 100vh;
         margin-top: 0;
     }
 
     .project_banner {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
     }
 
     /* .blissy_logo {
@@ -995,7 +1014,11 @@ footer * {
     } */
 
     .can_name {
-        font-size: var(--font-size-40);
+        font-size: 2rem
+    }
+
+    .brand_name {
+        font-size: 3rem;
     }
 
     .project_banner p {
@@ -1012,7 +1035,7 @@ footer * {
     } */
 
     .curve {
-        top: -5rem;
+        top: 2rem;
     }
 
     .small_mockup {
