@@ -1361,10 +1361,10 @@ footer * {
 
 @media (min-width: 1920px) and (max-width: 2560px) {
 
-    .footer-icons img {
+    /* .footer-icons img {
         width: 5%;
-    }
-    
+    } */
+
     .footer {
         background-size: 110%
     }
