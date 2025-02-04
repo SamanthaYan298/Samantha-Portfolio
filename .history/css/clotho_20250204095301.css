@@ -488,6 +488,7 @@
 
 .title {
     padding-top: 0.5rem;
+    width: 60%;
     line-height: 0.6;
 }
 
@@ -1642,6 +1643,10 @@ footer * {
 
 @media (min-width: 1920px) and (max-width: 2560px) {
 
+    .title {
+        width: 100%;
+    }
+    
     .footer {
         background-size: 110%
     }
