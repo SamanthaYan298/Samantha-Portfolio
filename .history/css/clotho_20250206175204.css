@@ -174,7 +174,7 @@
     color: var(--branding-purple);
     font-size: 4rem;
     margin: 1rem 0;
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
     font-weight: var(--heading-semiBold);
 }
 
