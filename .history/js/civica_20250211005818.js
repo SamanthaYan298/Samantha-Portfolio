@@ -110,10 +110,6 @@ function switchTab(tabId) {
     const buttons = document.querySelectorAll('.tab-button');
 
     tabs.forEach((tab) => {
-        const iframe = tab.querySelector('iframe');
-        if (iframe) {
-            iframe.src = iframe.src;
-        }
         tab.classList.remove('visible');
     });
 
@@ -121,28 +117,16 @@ function switchTab(tabId) {
         button.classList.remove('visible');
     });
 
-    const activeTab = document.getElementById(tabId);
-    activeTab.classList.add('visible');
-
-    const iframe = activeTab.querySelector('iframe');
-    if (iframe) {
-        const currentSrc = iframe.getAttribute('src');
-        iframe.src = '';
-        iframe.src = currentSrc;
-    }
-
-    const activeButton = Array.from(buttons).find((button) => {
-        return button.textContent.toLowerCase() === tabId.replace('-', ' ');
-    });
-    activeButton.classList.add('visible');
+    document.getElementById(tabId).classList.add('visible');
+    event.target.classList.add('visible');
 }
 
-// figma lazy loading
-document.addEventListener("scroll", function() {
-    let iframe = document.getElementById("figmaFrame2");
-    let rect = iframe.getBoundingClientRect();
+// // figma lazy loading
+// document.addEventListener("scroll", function() {
+//     let iframe = document.getElementById("figmaFrame2");
+//     let rect = iframe.getBoundingClientRect();
 
-    if (rect.top < window.innerHeight && iframe.src === "") {
-        iframe.src = iframe.getAttribute("data-src");
-    }
-});
+//     if (rect.top < window.innerHeight && iframe.src === "") {
+//         iframe.src = iframe.getAttribute("data-src");
+//     }
+// });
