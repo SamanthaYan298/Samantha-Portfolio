@@ -243,17 +243,6 @@
 
 /* Project Details */
 
-.figma-embed iframe {
-    width: 100%;
-    height: 50vh;
-}
-
-.figma-embed {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-
 .intro {
     display: flex;
     flex-direction: row;
@@ -1966,8 +1955,9 @@ footer * {
         margin-bottom: 1rem;
     } */
 
-    .figma-embed iframe{
-        height: 40vh;
+    .figma-embed {
+        width: 100%;
+        height: auto;
         margin-bottom: 1rem;
     }
 
@@ -2079,8 +2069,9 @@ footer * {
         margin-bottom: 1rem;
     } */
 
-    .figma-embed iframe{
-        height: 60vh;
+    .figma-embed {
+        width: 100%;
+        height: auto;
         margin-bottom: 1rem;
     }
 
@@ -2249,8 +2240,9 @@ footer * {
         margin-bottom: 1rem;
     } */
 
-    .figma-embed iframe {
-        height: 600px;
+    .figma-embed {
+        width: 100%;
+        height: auto;
         margin-bottom: 1rem;
     }
 
