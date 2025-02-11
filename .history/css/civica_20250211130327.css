@@ -2003,8 +2003,7 @@ footer * {
     }
 
     .mobile-sitemap {
-        width: 100% !important;
-        margin: 0 !important;
+        width: 100%;
         display: block;
     }
 
@@ -2121,18 +2120,8 @@ footer * {
     } */
 
     .figma-embed{
-        height: auto;
+        height: 70vh;
         margin-bottom: 1rem;
-    }
-
-    #civica-sitemap {
-        display: none;
-    }
-
-    .mobile-sitemap {
-        width: 100% !important;
-        margin: 0 !important;
-        display: block;
     }
 
     .video-section {

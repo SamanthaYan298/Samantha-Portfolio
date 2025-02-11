@@ -254,10 +254,6 @@
     max-height: 600px;
 }
 
-.mobile-sitemap {
-    display: none;
-}
-
 .wireframe-iframe {
     width: 100%;
     height: 90vh;
@@ -266,6 +262,7 @@
 
 #hifi-title {
     padding-top: 2rem;
+    text-align: left;
 }
 
 .message {
@@ -273,8 +270,6 @@
     font-weight: var(--paragraph-light);
     font-size: var(--font-size-16);
     color: var(--branding-purple);
-    text-align: left;
-    margin: 1rem 240px;
 }
 
 .intro {
@@ -1621,10 +1616,6 @@ footer * {
         margin: 2rem 2rem 1rem 2rem;
     }
 
-    .message {
-        margin: 1rem 2rem 0.5rem 2rem;
-    }
-
     .challenge_section h4 {
         margin-top: 2rem;
         font-size: var(--font-size-20);
@@ -1994,18 +1985,8 @@ footer * {
     } */
 
     .figma-embed{
-        height: auto;
+        height: 60vh;
         margin-bottom: 1rem;
-    }
-
-    #civica-sitemap {
-        display: none;
-    }
-
-    .mobile-sitemap {
-        width: 100% !important;
-        margin: 0 !important;
-        display: block;
     }
 
     .wireframe-iframe {
@@ -2121,18 +2102,8 @@ footer * {
     } */
 
     .figma-embed{
-        height: auto;
+        height: 70vh;
         margin-bottom: 1rem;
-    }
-
-    #civica-sitemap {
-        display: none;
-    }
-
-    .mobile-sitemap {
-        width: 100% !important;
-        margin: 0 !important;
-        display: block;
     }
 
     .video-section {
@@ -2281,10 +2252,6 @@ footer * {
     .persona_section h4,
     .promotional_section h4 {
         margin: 3rem 50px 1rem 50px;
-    }
-
-    .message {
-        margin: 1rem 50px -1rem 50px;
     }
 
     .carousel {
@@ -2468,10 +2435,6 @@ footer * {
     .persona_section h4,
     .promotional_section h4 {
         margin: 4rem 100px 1rem 100px;
-    }
-
-    .message {
-        margin: 1rem 100px -2rem 100px;
     }
 
     .project_showcase img,
