@@ -1951,8 +1951,9 @@ footer * {
 
     .userflow iframe {
         width: 100%;
-        min-height: 700px;
-        margin-bottom: 1rem;
+        min-height: 600px;
+        margin: 0rem !important;
+        
     }
 
     .video-section iframe {
@@ -2059,7 +2060,7 @@ footer * {
 
     .userflow iframe {
         width: 100%;
-        min-height: 700px;
+        min-height: 600px;
         margin-bottom: 1rem;
     }
 

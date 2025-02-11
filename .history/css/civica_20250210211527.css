@@ -1950,8 +1950,8 @@ footer * {
     }
 
     .userflow iframe {
-        width: 100%;
-        min-height: 700px;
+        width: 100vw;
+        height: 75vh;
         margin-bottom: 1rem;
     }
 
@@ -2058,8 +2058,8 @@ footer * {
     }
 
     .userflow iframe {
-        width: 100%;
-        min-height: 700px;
+        width: 100vw;
+        height: 75vh;
         margin-bottom: 1rem;
     }
 

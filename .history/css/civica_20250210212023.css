@@ -1674,8 +1674,12 @@ footer * {
     .userflow {
         display: flex;
         flex-direction: column;
-        margin: 1rem 2rem;
+        margin: 1rem 1rem;
         gap: 0em;
+    }
+
+    .interview {
+        margin: 0rem 2rem !important;
     }
 
     .tab-button {
@@ -1951,7 +1955,7 @@ footer * {
 
     .userflow iframe {
         width: 100%;
-        min-height: 700px;
+        min-height: 500px;
         margin-bottom: 1rem;
     }
 
@@ -2059,7 +2063,7 @@ footer * {
 
     .userflow iframe {
         width: 100%;
-        min-height: 700px;
+        min-height: 500px;
         margin-bottom: 1rem;
     }
 
