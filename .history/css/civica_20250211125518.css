@@ -254,10 +254,6 @@
     max-height: 600px;
 }
 
-.mobile-sitemap {
-    display: none;
-}
-
 .wireframe-iframe {
     width: 100%;
     height: 90vh;
@@ -1994,18 +1990,8 @@ footer * {
     } */
 
     .figma-embed{
-        height: auto;
+        height: 60vh;
         margin-bottom: 1rem;
-    }
-
-    #civica-sitemap {
-        display: none;
-    }
-
-    .mobile-sitemap {
-        width: 100% !important;
-        margin: 0 !important;
-        display: block;
     }
 
     .wireframe-iframe {
@@ -2121,18 +2107,8 @@ footer * {
     } */
 
     .figma-embed{
-        height: auto;
+        height: 70vh;
         margin-bottom: 1rem;
-    }
-
-    #civica-sitemap {
-        display: none;
-    }
-
-    .mobile-sitemap {
-        width: 100% !important;
-        margin: 0 !important;
-        display: block;
     }
 
     .video-section {
@@ -2284,7 +2260,7 @@ footer * {
     }
 
     .message {
-        margin: 1rem 50px -1rem 50px;
+        margin: 1rem 50px 0rem 50px;
     }
 
     .carousel {
@@ -2471,7 +2447,7 @@ footer * {
     }
 
     .message {
-        margin: 1rem 100px -2rem 100px;
+        margin: 1rem 100px 0rem 100px;
     }
 
     .project_showcase img,

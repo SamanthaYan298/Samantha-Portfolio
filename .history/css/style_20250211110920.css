@@ -1229,6 +1229,7 @@ footer * {
     }
 
     .ribbon {
+        top: 140px;
         left: -100px;
     }
 
@@ -1341,6 +1342,7 @@ footer * {
     }
 
     .ribbon {
+        top: 140px;
         left: -100px;
     }
 }
