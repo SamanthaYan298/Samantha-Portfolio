@@ -250,7 +250,7 @@
 
 .figma-embed {
     width: 100%;
-    height: 55vh;
+    height: 50vh;
     max-height: 600px;
 }
 
@@ -2015,8 +2015,7 @@ footer * {
         display: none;
     }
 
-    .final-iframe,
-    .wireframe-iframe {
+    .final-iframe {
         height: 50vh !important;
     }
 
@@ -2133,9 +2132,8 @@ footer * {
         margin-bottom: 1rem;
     }
 
-    .final-iframe,
-    .wireframe-iframe {
-        height: 40vh !important;
+    .final-iframe {
+        height: 60vh !important;
     }
 
     #civica-sitemap {

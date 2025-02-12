@@ -250,7 +250,7 @@
 
 .figma-embed {
     width: 100%;
-    height: 55vh;
+    height: 50vh;
     max-height: 600px;
 }
 
@@ -1742,10 +1742,6 @@ footer * {
         font-size: 17px;
     }
 
-    #hifi-title {
-        padding-top: 0rem;
-    }
-
     .final {
         padding-top: 1rem;
     }
@@ -2015,9 +2011,8 @@ footer * {
         display: none;
     }
 
-    .final-iframe,
     .wireframe-iframe {
-        height: 50vh !important;
+        height: 40vh;
     }
 
     .video-section iframe {
@@ -2131,11 +2126,6 @@ footer * {
     .figma-embed{
         height: auto;
         margin-bottom: 1rem;
-    }
-
-    .final-iframe,
-    .wireframe-iframe {
-        height: 40vh !important;
     }
 
     #civica-sitemap {
