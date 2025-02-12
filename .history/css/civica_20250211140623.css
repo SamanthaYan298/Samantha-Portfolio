@@ -269,7 +269,7 @@
 }
 
 .message {
-    font-style: var(--paragraph-italic);
+    font-family: var(--paragraph-italic);
     font-weight: var(--paragraph-light);
     font-size: var(--font-size-16);
     color: var(--branding-purple);
@@ -1622,7 +1622,6 @@ footer * {
     }
 
     .message {
-        font-size: var(--font-size-16);
         margin: 1rem 2rem 0.5rem 2rem;
     }
 
@@ -2353,7 +2352,7 @@ footer * {
 
     .colors div {
         flex-direction: column;
-        padding-top: 2rem;
+        padding-top: 0rem;
     }
 
     .colors {
@@ -2481,7 +2480,7 @@ footer * {
     }
 
     .colors div {
-        padding-top: 0rem;
+        padding-top: 2rem;
     }
 
     .blue,
