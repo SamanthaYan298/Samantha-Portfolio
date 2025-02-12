@@ -256,18 +256,10 @@
 
 .mobile-sitemap {
     width: 100% !important;
-    margin: 0 !important;
 }
 
-#mobile-section {
-    display: flex;
+.mobile-section {
     flex-direction: column !important;
-    gap: 2rem;
-}
-
-#mobile-paragraph {
-    width: 100%;
-    font-size: var(--font-size-20);
 }
 
 .wireframe-iframe {
@@ -1871,6 +1863,10 @@ footer * {
         font-size: var(--font-size-16);
     }
 
+    .mobile {
+        margin: 0 !important;
+    }
+
     .challenge_section {
         margin: 1rem 2rem;
     }
@@ -2011,6 +2007,12 @@ footer * {
         display: none;
     }
 
+    .mobile-sitemap {
+        width: 100% !important;
+        margin: 0 !important;
+        display: block;
+    }
+
     .wireframe-iframe {
         height: 40vh;
     }
@@ -2130,6 +2132,12 @@ footer * {
 
     #civica-sitemap {
         display: none;
+    }
+
+    .mobile-sitemap {
+        width: 100% !important;
+        margin: 0 !important;
+        display: block;
     }
 
     .video-section {

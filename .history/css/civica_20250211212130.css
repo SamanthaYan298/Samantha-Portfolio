@@ -262,12 +262,11 @@
 #mobile-section {
     display: flex;
     flex-direction: column !important;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 #mobile-paragraph {
     width: 100%;
-    font-size: var(--font-size-20);
 }
 
 .wireframe-iframe {
