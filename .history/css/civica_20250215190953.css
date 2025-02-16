@@ -1585,10 +1585,10 @@ footer * {
         font-size: var(--font-size-18);
     }
 
-    .wireframe-mobile {
-        margin-left: -2rem;
-        margin-right: -2rem;
-    }
+    /* .wireframe-mobile {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    } */
 
     .mockup {
         width: 80%;

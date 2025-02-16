@@ -1586,8 +1586,8 @@ footer * {
     }
 
     .wireframe-mobile {
-        margin-left: -2rem;
-        margin-right: -2rem;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .mockup {
