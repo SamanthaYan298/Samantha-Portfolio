@@ -2077,8 +2077,7 @@ span {
         justify-content: center;
         align-items: center;
         padding-top: 3rem;
-        height: 140vh;
-        padding-top: 0;
+        height: 110vh;
     }
 
     .project_mockup {
@@ -2107,7 +2106,6 @@ span {
         margin-left: 0;
         justify-content: center;
         align-items: center;
-        margin-top: 0;
     }
 
     .tags {
