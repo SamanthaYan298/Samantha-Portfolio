@@ -2,7 +2,6 @@
 
 :root {
     --branding-purple: #575195;
-    --branding-purple-hover: #7470b8;
     --branding-pink: #F9B5C3;
     --branding-light-pink: #F6DADF;
     --background-pink: #FEFBFC;
@@ -89,7 +88,7 @@ p {
 .small_mockup {
     display: none;
     animation: fadeInUp 2.5s ease forwards, moveUpDown 6s linear infinite;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .home {
@@ -283,7 +282,6 @@ p {
 .design_reason p {
     font-size: var(--font-size-16);
     margin-bottom: 1rem;
-    text-wrap: balance;
 }
 
 /* Design Concept */
@@ -314,13 +312,15 @@ p {
 
 .glowfish {
     display: block;
-    align-items: center;
-    justify-content: center;
-    width: 20%;
+    align-items: flex-start;
+    justify-content: left;
+    width: 37%;
+    padding-right: 80px;
 }
 
 .description {
-    width: 50%;
+    width: 59%;
+    padding-right: 200px;
 }
 
 /* Demo Video */
@@ -391,31 +391,27 @@ p {
 
 .characters {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.narrator_section {
-    display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-    margin: 8rem 240px 6rem 240px;
+    margin: 0rem 240px 3.5rem 240px;
 }
 
-.tools-intro h4,
-.details h4,
-.background h4,
-.carousel_title {
+.characters_intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+    margin-bottom: 2rem;
+    gap: 3rem;
+    width: 40%;
+}
+
+.characters_intro h4 {
     font-family: var(--heading-font);
     font-weight: var(--heading-semiBold);
     font-size: var(--font-size-24);
     color: var(--branding-purple);
-    margin-bottom: 1rem;
-}
-
-.carousel_title {
-    margin: 0rem 240px 1rem 240px;
 }
 
 .details {
@@ -423,191 +419,69 @@ p {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    width: 70%;
+    width: 60%;
 }
 
-.narrator {
-    width: 30%;
-    height: auto;
-}
-
-.narrator_sit {
-    width: 100%;
-    height: auto;
-    padding-top: 1rem;
-}
-
-.characters_intro {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: right;
-    gap: 5rem;
-}
-
-/* .narrator {
-    width: 100%;
-    height: auto;
-    padding-top: 1rem;
-    margin-top: -14rem;
-} */
-
-.details p,
-.tools-intro p,
-.background p {
+.details p {
     font-family: var(--paragraph-font);
     font-size: var(--font-size-18);
     font-weight: var(--paragraph-regular);
     margin-bottom: 1rem;
 }
 
-.tea-tools {
+.scenes img {
     width: 100%;
     height: auto;
     padding-top: 1rem;
-    display: block;
-    margin-left: auto;
-    margin-right: 0;
 }
 
-.tools-intro {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 0rem 240px -6rem 240px;
+#sailfish {
+    padding-top: 8rem;
 }
 
-.tools-intro p {
-    width: 70%;
-}
-
-.background {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 6rem 240px 1rem 240px;
-}
-
-.scene {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0rem 240px 6rem 240px;
-}
-
-.stroy-scene {
+.illustration {
     width: 100%;
     height: auto;
+    padding-right: 3.5rem;
+    padding-top: 3rem;
 }
 
-/* Carousel */
-
-.carousel {
+.equipments {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    position: relative;
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.388);
+    justify-self: center;
     margin: 2rem 240px 4.5rem 240px;
-}
-
-.carousel-inner {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-}
-
-.carousel-open:checked + .carousel-item {
-    position: static;
-    opacity: 1;
-    transition: none;
-}
-
-.carousel-item {
-    position: absolute;
-    opacity: 0;
-}
-
-.carousel-item img {
-    display: block;
-    height: auto;
-    width: 100%;
-}
-
-.carousel-control {
-    background: var(--branding-purple-hover);
-    border-radius: 50%;
-    color: #fff;
-    cursor: pointer;
-    display: none;
-    font-size: 40px;
-    height: 40px;
-    line-height: 35px;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translate(0, -50%);
-    cursor: pointer;
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
     text-align: center;
-    width: 40px;
-    z-index: 10;
 }
 
-.carousel-control.prev {
-    left: 2%;
+.equipments h4{
+    font-family: var(--heading-font);
+    font-weight: var(--heading-semiBold);
+    font-size: var(--font-size-24);
+    color: var(--branding-purple);
 }
 
-.carousel-control.next {
-    right: 2%;
-}
-
-.carousel-control:hover {
-    background: var(--branding-purple);
-    color: white;
-}
-
-#carousel-1:checked ~ .control-1,
-#carousel-2:checked ~ .control-2,
-#carousel-3:checked ~ .control-3,
-#carousel-4:checked ~ .control-4 {
+.equipments img {
     display: block;
+    margin: 2rem auto 1rem auto;
+    width: 90%;
+    border: 2px solid var(--branding-purple);
+    border-radius: 50px;
 }
 
-.carousel-indicators {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    bottom: 2%;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 10;
+.storyline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-.carousel-indicators li {
-    display: inline-block;
-    margin: 0 5px;
-}
-
-.carousel-bullet {
-    color: var(--branding-purple-hover);
-    cursor: pointer;
-    display: block;
-    font-size: 35px;
-}
-
-.carousel-bullet:hover {
-    color: #aaaaaa;
-}
-
-#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
-#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
-#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
-#carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet {
-    color: var(--branding-pink);
+.storyline p {
+    font-family: var(--paragraph-font);
+    font-size: var(--font-size-18);
+    font-weight: var(--paragraph-regular);
+    padding-right: 1rem;
 }
 
 .btn {
@@ -967,39 +841,20 @@ p {
     }
     
     .design_concept {
-        display: flex;
-        flex-direction: column;
         padding: 0;
         margin-top: 2rem;
         margin-bottom: 2rem;
-        gap: 1rem;
     }
 
     .design_concept p {
         font-size: var(--font-size-16);
-        padding: 0;
+        padding: 0 1rem;
     }
 
-    /* Main Content */
-
-    .narrator {
-        display: none;
-    }
-
-    .narrator_section {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
+    .characters {
         margin: 2rem 2rem;
-    }
-
-    .tools-intro {
-        margin: 0rem 2rem -1rem 2rem; 
-    }
-
-    .tools-intro p {
-        width: 100%;
+        flex-direction: column;
+        align-items: center;
     }
 
     .characters_intro, .details {
@@ -1007,34 +862,9 @@ p {
         flex-direction: column;
     }
 
-    .characters_intro h4,
-    .tools-intro h4,
-    .background h4,
-    .carousel_title {
-        text-align: left;
+    .characters_intro h4 {
+        text-align: center;
         font-size: var(--font-size-18);
-    }
-
-    .carousel_title {
-        display: none;
-    }
-
-    .carousel {
-        display: none;
-    }
-
-    .background {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 2rem 2rem 1rem 2rem;
-    }
-    
-    .scene {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0rem 2rem 3rem 2rem;
     }
 
     .project_showcase h3 {
@@ -1049,10 +879,13 @@ p {
         width: 100%;
     }
 
-    .details p,
-    .tools-intro p,
-    .background p {
+    .details p {
         font-size: var(--font-size-16);
+    }
+
+    .illustration {
+        padding-right: 0;
+        padding-top: 1rem;
     }
 
     .mockup {
@@ -1065,20 +898,17 @@ p {
     }
 
     .glowfish {
-        margin-top: 4rem;
-        width: 50%;
+        display: none;
     }
 
     .description {
-        padding: 0 2rem;
+        padding: 0;
         width: 100%;
-        margin: 0 0 4rem 0;
+        margin: 4rem 2rem;
     }
 
     .description h3 {
         font-size: var(--font-size-30);
-        padding: 0;
-        margin-bottom: 1rem;
         text-align: center;
     }
 
@@ -1112,6 +942,27 @@ p {
         margin: 0 2rem;
         width: 60%;
         font-size: var(--font-size-16);
+    }
+
+    .equipments h4 {
+        font-size: var(--font-size-18);
+        margin: 0 2rem;
+    }
+
+    .equipments {
+        margin: 0 2rem 3rem 2rem;
+    }
+
+    .equipments img {
+        border-radius: 20px;
+    }
+    
+    .storyline p {
+        font-size: var(--font-size-16);
+    }
+
+    .storyline {
+        display: none;
     }
 
     /* Animation */
@@ -1159,8 +1010,6 @@ p {
         width: 55%;
         height: auto;
     }
-
-    /* Footer */
 
     .footer {
         padding-left: 50px;
@@ -1221,7 +1070,6 @@ p {
 
     .can_name_small {
         color: var(--branding-purple);
-        text-align: center;
         display: block;
         font-size: 1.438rem;
         padding-bottom: 1rem;
@@ -1467,6 +1315,10 @@ p {
         padding: 0 50px;
     }
 
+    .demo p {
+        margin: 1rem 50px;
+    }
+
     .design_concept {
         gap: 3rem;
     }
@@ -1479,57 +1331,16 @@ p {
         padding-right: 0px;
     }
 
-    /* Main Content */
+    .characters {
+        margin: 0rem 100px 3.5rem 100px;
+    }
 
     .characters_intro {
-        display: flex;
-        flex-direction: row;
+        padding-right: 2rem;
     }
 
-    .narrator_section {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        margin: 3.5rem 50px;
-    }
-
-    .tools-intro {
-        margin: 0rem 50px -1rem 50px; 
-    }
-
-    .tools-intro p {
-        width: 100%;
-    }
-
-    .characters_intro h4,
-    .tools-intro h4,
-    .background h4,
-    .carousel_title {
-        text-align: left;
-        font-size: var(--font-size-24);
-    }
-
-    .carousel_title {
-        margin: 0rem 50px 1rem 50px;
-    }
-
-    .carousel {
-        margin: 2rem 50px 1rem 50px;
-    }
-
-    .background {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 3.5rem 50px 1rem 50px;
-    }
-    
-    .scene {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0rem 50px 3.5rem 50px;
+    .equipments {
+        margin: 2rem 100px;
     }
 
     .footer {
@@ -1583,7 +1394,7 @@ p {
     }
 
     .description {
-        width: 60%;
+        width: 70%;
         padding-right: 50px;
     }
 
@@ -1600,42 +1411,16 @@ p {
         margin: auto;
     }
 
-    /* Main Content */
-
-    .narrator_section {
-        margin: 4rem 100px;
+    .characters {
+        margin: 0rem 100px 3.5rem 100px;
     }
 
-    .tools-intro {
-        margin: 0rem 100px -1rem 100px; 
+    #sailfish {
+        padding-top: 6rem;
     }
 
-    .tools-intro p {
-        width: 70%;
-    }
-
-    .characters_intro h4,
-    .tools-intro h4,
-    .background h4,
-    .carousel_title {
-        text-align: left;
-        font-size: var(--font-size-24);
-    }
-
-    .carousel_title {
-        margin: 0rem 100px 1rem 100px;
-    }
-
-    .carousel {
-        margin: 2rem 100px 1rem 100px;
-    }
-
-    .background {
-        margin: 4rem 100px 1rem 100px;
-    }
-
-    .scene {
-        margin: 0rem 100px 4rem 100px;
+    .equipments {
+        margin: 4.5rem 100px;
     }
 
     .footer {
