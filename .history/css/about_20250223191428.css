@@ -1228,6 +1228,9 @@ p {
         margin-left: 150px;
         margin-right: 150px;
     }
+    .tools {
+        width: 100%;
+    }
 
     .footer-icons img {
         width: 5%;
