@@ -35,6 +35,11 @@
     scroll-behavior: smooth;
 }
 
+html {
+    scrollbar-color: red blue;
+    scrollbar-width: thin;
+}
+
 body {
     background-color: var(--background-pink);
 }

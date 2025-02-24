@@ -35,6 +35,16 @@
     scroll-behavior: smooth;
 }
 
+html {
+    scrollbar-color: #575195 #F6DADF;
+    scrollbar-width: thin;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #575195;
+    border-radius: 10px;
+}
+
 body {
     background-color: var(--background-pink);
 }
