@@ -227,7 +227,7 @@ p {
     font-weight: var(--paragraph-light);
     font-size: var(--font-size-30);
     margin-bottom: 1rem;
-    width: 23rem;
+    width: 22rem;
 }
 
 .large-bold {
@@ -265,18 +265,9 @@ p {
 /* Project Showcase */
 
 .project_showcase {
-    text-align: left;
+    text-align: center;
+    align-items: center;
     margin: 6rem 240px 0rem 240px;
-}
-
-.project_showcase img {
-    width: 100%;
-    height: auto;
-}
-
-.project_showcase p {
-    margin: 1rem 0 2rem 0;
-    font-size: var(--font-size-18);
 }
 
 .project_showcase h4 {
@@ -288,28 +279,10 @@ p {
     margin: 4rem 0 1rem 0;
 }
 
-.project_showcase h5 {
-    font-family: var(--heading-font);
-    font-weight: var(--heading-semiBold);
-    font-size: var(--font-size-24);
-    margin-bottom: 2rem;
-}
-
-.logo_variantion {
+.iframe-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.logo_variantion img {
-    width: 45%;
-    height: auto;
-}
-
-.posters img {
-    width: 30%;
-    height: auto;
-    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Carousel */
@@ -725,17 +698,12 @@ p {
         font-size: var(--font-size-20);
     }
 
-    .design_reason h5 {
-        font-size: var(--font-size-20);
-    }
-
     .project_intro p {
         font-size: var(--font-size-16);
     }
 
-    .project_showcase h4 {
+    .project_showcase h4,.highlight {
         font-size: var(--font-size-18);
-        margin-top: 2rem;
     }
 
     .mockup {
@@ -795,20 +763,6 @@ p {
 
     .menu-logo {
         width: 55%;
-        height: auto;
-    }
-
-    .project_showcase h5 {
-        font-size: var(--font-size-16);
-        margin-bottom: 1rem;
-    }
-
-    .logo_variantion {
-        flex-direction: column;
-    }
-
-    .logo_variantion img {
-        width: 100%;
         height: auto;
     }
 
@@ -1223,14 +1177,6 @@ p {
 
     .design_reason {
         width: 50%;
-    }
-
-    .project_showcase p {
-        font-size: var(--font-size-24);
-    }
-
-    .project_showcase h5 {
-        font-size: var(--font-size-30);
     }
 
     .project_mockup {

@@ -139,15 +139,15 @@ p {
     position: relative;
     overflow: hidden;
     animation: fadeIn 2s ease;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .project_banner {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-left: 5rem;
-    margin-top: 7rem;
+    margin-left: 7rem;
+    margin-top: 4.5rem;
     text-align: left;
     align-items: flex-start;
     z-index: 2;
@@ -177,16 +177,101 @@ p {
     font-size: 4rem;
 }
 
+/* Tags */
+
+.tags {
+    display: flex;
+    gap: 2rem;
+    font-family: var(--heading-font);
+    font-weight: var(--paragraph-medium);
+}
+
+.tag {
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    width: 11rem;
+    background: var(--branding-pink);
+    font-weight: var(--paragraph-medium);
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(102, 91, 139, 0.3);
+    transition: background 0.3s ease;
+}
+
+/* Button Hover Effect */
+.tag:hover {
+    background-color: var(--branding-light-pink);
+    color: black;
+    box-shadow: 0 4px 10px rgba(246, 218, 223, 0.5);
+}
+
+.tag .star-1,.star-3 {
+    position: absolute;
+    width: 25px;
+    height: auto;
+    z-index: -1;
+    transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+}
+
+.tag .star-2 {
+    position: absolute;
+    width: 15px;
+    height: auto;
+    z-index: -1;
+    transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+}
+
+/* Star */
+.star-1,.star-3 {
+    top: 20%;
+    left: 20%;
+}
+
+.star-2 {
+    top: 35%;
+    left: 35%;
+    width: 15px;
+}
+
+/* Star Hover */
+.tag:hover .star-1 {
+    top: -50%;
+    left: -15%;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+}
+
+.tag:hover .star-3 {
+    top: 80%;
+    left: 100%;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+}
+
+.tag:hover .star-2 {
+    top: -8%;
+    left: 10%;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+}
+
+/* Star Fill Color */
+.fil0 {
+    fill: var(--branding-purple);
+}
+
 /* Banner Side Elements */
 
 .project_mockup {
-    width: 50%;
+    width: 67%;
     height: auto;
     position: relative;
     z-index: 1;
     opacity: 0;
     animation: fadeInUp 2.5s ease forwards, moveUpDown 6s linear infinite;
-    top: 3rem;
+    top: 6rem;
 }
 
 /* Curve Grow */
@@ -227,7 +312,7 @@ p {
     font-weight: var(--paragraph-light);
     font-size: var(--font-size-30);
     margin-bottom: 1rem;
-    width: 23rem;
+    width: 22rem;
 }
 
 .large-bold {
@@ -257,6 +342,20 @@ p {
     margin-bottom: 1rem;
 }
 
+/* Design Concept */
+
+.design_concept {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+.separator {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
 .project_logo {
     position: absolute;
     transform: scale(0.4);
@@ -265,51 +364,43 @@ p {
 /* Project Showcase */
 
 .project_showcase {
-    text-align: left;
-    margin: 6rem 240px 0rem 240px;
+    text-align: center;
+    align-items: center;
 }
 
-.project_showcase img {
-    width: 100%;
-    height: auto;
-}
-
-.project_showcase p {
-    margin: 1rem 0 2rem 0;
-    font-size: var(--font-size-18);
-}
-
-.project_showcase h4 {
-    font-size: var(--font-size-40);
-    font-weight: var(--heading-semiBold);
-    font-family: var(--heading-font);
-    color: var(--branding-purple);
-    display: flex;
-    margin: 4rem 0 1rem 0;
-}
-
-.project_showcase h5 {
-    font-family: var(--heading-font);
-    font-weight: var(--heading-semiBold);
+.project_showcase h4,.dieline h4 {
     font-size: var(--font-size-24);
+    font-weight: var(--heading-semiBold);
+    font-family: var(--heading-font);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dieline h4 {
     margin-bottom: 2rem;
 }
 
-.logo_variantion {
+.highlight {
+    background-image: linear-gradient(90deg, #575195, #F9B5C3);
+    font-size: var(--font-size-24);
+    font-weight: var(--heading-semiBold);
+    font-family: var(--heading-font);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Pineapple Flavor */
+
+.mockup {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.logo_variantion img {
-    width: 45%;
+    width: 60%;
     height: auto;
-}
-
-.posters img {
-    width: 30%;
-    height: auto;
-    margin-bottom: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5rem auto;
+    padding-bottom: 2rem;
 }
 
 /* Carousel */
@@ -320,7 +411,9 @@ p {
     justify-content: center;
     position: relative;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.388);
-    margin: 0 0 4.5rem 0;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1400px;
 }
 
 .carousel-inner {
@@ -381,8 +474,7 @@ p {
 
 #carousel-1:checked ~ .control-1,
 #carousel-2:checked ~ .control-2,
-#carousel-3:checked ~ .control-3,
-#carousel-4:checked ~ .control-4 {
+#carousel-3:checked ~ .control-3 {
     display: block;
 }
 
@@ -416,9 +508,12 @@ p {
 
 #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
 #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
-#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
-#carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet {
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
     color: var(--branding-pink);
+}
+
+.dieline {
+    margin: 0rem 240px 4.5rem 240px;
 }
 
 /* Back to Top Star */
@@ -720,12 +815,25 @@ p {
         align-items: center;
     }
 
-    .slogan {
-        width: 100%;
-        font-size: var(--font-size-20);
+    /* .blissy_logo {
+        width: 60%;
+    } */
+
+    .tags {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
     }
 
-    .design_reason h5 {
+    .tag {
+        width: 9rem;
+        font-size: 1rem;
+        padding: 0.8rem 0.7rem;
+    }
+
+    .slogan {
+        width: 100%;
         font-size: var(--font-size-20);
     }
 
@@ -733,9 +841,16 @@ p {
         font-size: var(--font-size-16);
     }
 
-    .project_showcase h4 {
+    .separator {
+        width: 100%;
+    }
+
+    .project_showcase h4,.highlight,.dieline h4 {
         font-size: var(--font-size-18);
-        margin-top: 2rem;
+    }
+
+    .dieline {
+        margin: 0 2rem 3rem 2rem;
     }
 
     .mockup {
@@ -746,10 +861,6 @@ p {
 
     .small_mockup {
         padding-bottom: 0.5rem;
-    }
-
-    .project_showcase {
-        margin: 1rem 2rem 0rem 2rem;
     }
 
     /* Animation */
@@ -795,20 +906,6 @@ p {
 
     .menu-logo {
         width: 55%;
-        height: auto;
-    }
-
-    .project_showcase h5 {
-        font-size: var(--font-size-16);
-        margin-bottom: 1rem;
-    }
-
-    .logo_variantion {
-        flex-direction: column;
-    }
-
-    .logo_variantion img {
-        width: 100%;
         height: auto;
     }
 
@@ -899,6 +996,11 @@ p {
         top: -5rem;
     }
 
+    .design_concept {
+        padding: 0;
+        margin: 2rem 0;
+    }
+
     .hamburger img {
         width: 35%;
         height: auto;
@@ -961,7 +1063,7 @@ p {
 
     .small_mockup {
         display: block;
-        width: 80%;
+        width: 84%;
     }
 
     .can_name {
@@ -990,7 +1092,7 @@ p {
     }
 
     .curve {
-        top: 3rem;
+        top: -1rem;
     }
 
     .hamburger img {
@@ -998,7 +1100,6 @@ p {
         height: auto;
         margin-left: 12.5rem;
     }
-    
     .footer-icons {
         display: flex;
         gap: 5px;
@@ -1077,7 +1178,7 @@ p {
 
     .project_mockup {
         display: block;
-        width: 50%;
+        width: 70%;
     }
 
     /* .curve {
@@ -1103,8 +1204,13 @@ p {
         width: 100%;
     }
 
-    .project_showcase {
-        margin: 1rem 50px 0rem 50px;
+    .design_concept {
+        padding: 0;
+        margin: 0;
+    }
+
+    .dieline {
+        margin: 0rem 50px 4.5rem 50px;
     }
 
     .footer {
@@ -1153,8 +1259,9 @@ p {
         margin: 6rem 100px 1rem 100px; 
     }
 
-    .project_showcase {
-        margin: 1rem 100px 0rem 100px;
+    .design_concept {
+        padding: 0;
+        margin: 0;
     }
 
     .footer {
@@ -1203,13 +1310,13 @@ p {
 
 @media (min-width: 1920px) and (max-width: 1960px) {
     .project_banner p {
-        width: 60%;
+        width: 85%;
     }
 }
 
 @media (min-width: 1961px) and (max-width: 2164px) {
     .project_banner p {
-        width: 65%;
+        width: 75%;
     }
 }
 
@@ -1225,16 +1332,9 @@ p {
         width: 50%;
     }
 
-    .project_showcase p {
-        font-size: var(--font-size-24);
-    }
-
-    .project_showcase h5 {
-        font-size: var(--font-size-30);
-    }
-
-    .project_mockup {
-        width: 75%;
+    .carousel {
+        width: 85%;
+        max-width: 2560px;
     }
 
     .footer-icons img {
