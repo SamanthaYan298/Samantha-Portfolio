@@ -89,7 +89,7 @@ p {
 .small_mockup {
     display: none;
     animation: fadeInUp 2.5s ease forwards, moveUpDown 6s linear infinite;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .home {
@@ -139,15 +139,15 @@ p {
     position: relative;
     overflow: hidden;
     animation: fadeIn 2s ease;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .project_banner {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-left: 5rem;
-    margin-top: 7rem;
+    margin-left: 7rem;
+    margin-top: 4.5rem;
     text-align: left;
     align-items: flex-start;
     z-index: 2;
@@ -177,16 +177,101 @@ p {
     font-size: 4rem;
 }
 
+/* Tags */
+
+.tags {
+    display: flex;
+    gap: 2rem;
+    font-family: var(--heading-font);
+    font-weight: var(--paragraph-medium);
+}
+
+.tag {
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    width: 11rem;
+    background: var(--branding-pink);
+    font-weight: var(--paragraph-medium);
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(102, 91, 139, 0.3);
+    transition: background 0.3s ease;
+}
+
+/* Button Hover Effect */
+.tag:hover {
+    background-color: var(--branding-light-pink);
+    color: black;
+    box-shadow: 0 4px 10px rgba(246, 218, 223, 0.5);
+}
+
+.tag .star-1,.star-3 {
+    position: absolute;
+    width: 25px;
+    height: auto;
+    z-index: -1;
+    transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+}
+
+.tag .star-2 {
+    position: absolute;
+    width: 15px;
+    height: auto;
+    z-index: -1;
+    transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+}
+
+/* Star */
+.star-1,.star-3 {
+    top: 20%;
+    left: 20%;
+}
+
+.star-2 {
+    top: 35%;
+    left: 35%;
+    width: 15px;
+}
+
+/* Star Hover */
+.tag:hover .star-1 {
+    top: -50%;
+    left: -15%;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+}
+
+.tag:hover .star-3 {
+    top: 80%;
+    left: 100%;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+}
+
+.tag:hover .star-2 {
+    top: -8%;
+    left: 10%;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+}
+
+/* Star Fill Color */
+.fil0 {
+    fill: var(--branding-purple);
+}
+
 /* Banner Side Elements */
 
 .project_mockup {
-    width: 50%;
+    width: 70%;
     height: auto;
     position: relative;
     z-index: 1;
     opacity: 0;
     animation: fadeInUp 2.5s ease forwards, moveUpDown 6s linear infinite;
-    top: 3rem;
+    top: 4rem;
 }
 
 /* Curve Grow */
@@ -219,7 +304,7 @@ p {
     position: relative;
     z-index: 2;
     gap: 10rem;
-    margin: 8rem 240px 2rem 240px; 
+    margin: 8rem 240px; 
 }
 
 .slogan {
@@ -227,7 +312,7 @@ p {
     font-weight: var(--paragraph-light);
     font-size: var(--font-size-30);
     margin-bottom: 1rem;
-    width: 23rem;
+    width: 22rem;
 }
 
 .large-bold {
@@ -255,61 +340,215 @@ p {
 .design_reason p {
     font-size: var(--font-size-16);
     margin-bottom: 1rem;
+    text-wrap: balance;
 }
 
-.project_logo {
-    position: absolute;
-    transform: scale(0.4);
+/* Design Concept */
+
+.design_concept {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 0;
+    background-color: var(--branding-light-pink);
+    margin-bottom: 8rem;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.design_concept h3 {
+    font-size: var(--font-size-40);
+    font-weight: var(--heading-semiBold);
+    color: var(--branding-purple);
+    margin-bottom: 2rem;
+}
+
+.design_concept p {
+    font-size: var(--font-size-18);
+    margin-top: 1rem;
+    padding: 0 3rem;
+}
+
+.glowfish {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+
+.description {
+    width: 50%;
+}
+
+/* Demo Video */
+.demo h4 {
+    font-size: var(--font-size-24);
+    font-weight: var(--heading-semiBold);
+    font-family: var(--heading-font);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.demo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.demo p {
+    font-family: var(--paragraph-font);
+    font-size: 1rem;
+    margin-top: 1rem;
 }
 
 /* Project Showcase */
 
 .project_showcase {
-    text-align: left;
-    margin: 6rem 240px 0rem 240px;
+    text-align: center;
+    align-items: center;
+    padding: 6rem 0;
 }
 
-.project_showcase img {
-    width: 100%;
-    height: auto;
-}
-
-.project_showcase p {
-    margin: 1rem 0 2rem 0;
-    font-size: var(--font-size-18);
-}
-
-.project_showcase h4 {
+.project_showcase h3 {
     font-size: var(--font-size-40);
     font-weight: var(--heading-semiBold);
     font-family: var(--heading-font);
     color: var(--branding-purple);
-    display: flex;
-    margin: 4rem 0 1rem 0;
+    text-align: left;
+    margin: 2rem 240px;
 }
 
-.project_showcase h5 {
+.design_choices {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0;
+    background-color: var(--branding-purple);
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.design_choices p {
+    font-family: var(--paragraph-font);
+    font-size: var(--font-size-18);
+    width: 60%;
+    color: white;
+    margin: 0 240px;
+    text-align: left;
+}
+
+.sketch {
+    width: 60%;
+}
+
+/* Characters */
+
+.characters {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.narrator_section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 8rem 240px 6rem 240px;
+}
+
+.tools-intro h4,
+.details h4,
+.background h4,
+.carousel_title {
     font-family: var(--heading-font);
     font-weight: var(--heading-semiBold);
     font-size: var(--font-size-24);
-    margin-bottom: 2rem;
+    color: var(--branding-purple);
+    margin-bottom: 1rem;
 }
 
-.logo_variantion {
+.carousel_title {
+    margin: 0rem 240px 1rem 240px;
+}
+
+.details {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 70%;
 }
 
-.logo_variantion img {
-    width: 45%;
-    height: auto;
-}
-
-.posters img {
+.narrator {
     width: 30%;
     height: auto;
+}
+
+.narrator_sit {
+    width: 100%;
+    height: auto;
+    padding-top: 1rem;
+}
+
+.characters_intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    gap: 5rem;
+}
+
+.details p,
+.tools-intro p,
+.background p {
+    font-family: var(--paragraph-font);
+    font-size: var(--font-size-18);
+    font-weight: var(--paragraph-regular);
     margin-bottom: 1rem;
+}
+
+.tea-tools {
+    width: 100%;
+    height: auto;
+    padding-top: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.tools-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0rem 240px -6rem 240px;
+}
+
+.tools-intro p {
+    width: 70%;
+}
+
+.background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 6rem 240px 1rem 240px;
+}
+
+.scene {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem 240px 6rem 240px;
+}
+
+.stroy-scene {
+    width: 100%;
+    height: auto;
 }
 
 /* Carousel */
@@ -320,7 +559,7 @@ p {
     justify-content: center;
     position: relative;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.388);
-    margin: 0 0 4.5rem 0;
+    margin: 2rem 240px 4.5rem 240px;
 }
 
 .carousel-inner {
@@ -420,6 +659,37 @@ p {
 #carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet {
     color: var(--branding-pink);
 }
+
+.btn {
+    text-decoration: none;
+    color: white;
+    width: 10.2rem;
+    background: var(--branding-purple);
+    font-weight: var(--paragraph-medium);
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(102, 91, 139, 0.3);
+    transition: background 0.3s ease;
+    text-align: center;
+}
+
+.btn:hover {
+    background: var(--branding-light-pink);
+    color: black;
+}
+
+/* Pineapple Flavor */
+
+.mockup {
+    display: flex;
+    width: 60%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5rem auto;
+    padding-bottom: 2rem;
+}
+
 
 /* Back to Top Star */
 
@@ -708,8 +978,8 @@ p {
         flex-direction: column;
         position: relative;
         z-index: 2;
-        gap: 2rem;
-        margin: 6rem 2rem 1rem 2rem; 
+        gap: 5rem;
+        margin: 6rem 2rem; 
     }
 
     .banner {
@@ -720,36 +990,178 @@ p {
         align-items: center;
     }
 
-    .slogan {
-        width: 100%;
-        font-size: var(--font-size-20);
+    .brand_name {
+        font-size: 2rem;
     }
 
-    .design_reason h5 {
+    .tags {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .tag {
+        width: 9rem;
+        font-size: 1rem;
+        padding: 0.8rem 0.7rem;
+    }
+
+    .slogan {
+        width: 100%;
         font-size: var(--font-size-20);
     }
 
     .project_intro p {
         font-size: var(--font-size-16);
     }
-
-    .project_showcase h4 {
-        font-size: var(--font-size-18);
+    
+    .design_concept {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
         margin-top: 2rem;
+        margin-bottom: 2rem;
+        gap: 1rem;
+    }
+
+    .design_concept p {
+        font-size: var(--font-size-16);
+        padding: 0;
+    }
+
+    /* Main Content */
+
+    .narrator {
+        display: none;
+    }
+
+    .narrator_section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 2rem 2rem;
+    }
+
+    .tools-intro {
+        margin: 0rem 2rem -1rem 2rem; 
+    }
+
+    .tools-intro p {
+        width: 100%;
+    }
+
+    .characters_intro, .details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .characters_intro h4,
+    .tools-intro h4,
+    .background h4,
+    .carousel_title {
+        text-align: left;
+        font-size: var(--font-size-18);
+    }
+
+    .carousel_title {
+        margin: 0rem 2rem 1rem 2rem;
+    }
+
+    .carousel {
+        margin: 0rem 2rem 3rem 2rem;
+    }
+
+    .background {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 2rem 2rem 1rem 2rem;
+    }
+    
+    .scene {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0rem 2rem 3rem 2rem;
+    }
+
+    .project_showcase h3 {
+        font-size: var(--font-size-30);
+    }
+
+    .characters_intro {
+        width: 100%;
+    }
+
+    .details {
+        width: 100%;
+    }
+
+    .details p,
+    .tools-intro p,
+    .background p {
+        font-size: var(--font-size-16);
     }
 
     .mockup {
         width: 80%;
         height: auto;
-        padding-bottom: 0.5rem;
     }
 
     .small_mockup {
         padding-bottom: 0.5rem;
     }
 
+    .glowfish {
+        margin-top: 4rem;
+        width: 50%;
+    }
+
+    .description {
+        padding: 0 2rem;
+        width: 100%;
+        margin: 0 0 4rem 0;
+    }
+
+    .description h3 {
+        font-size: var(--font-size-30);
+        padding: 0;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .description p {
+        font-size: 1rem;
+    }
+
+    .demo {
+        padding: 0 2rem; 
+    }
+
+    .video-container {
+        width: 100%;
+        max-width: 1000px;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        display: block;
+        margin: auto;
+    }
+
+    .project_showcase h3 {
+        margin: 2rem 2rem;
+        text-align: center;
+    }
+
     .project_showcase {
-        margin: 1rem 2rem 0rem 2rem;
+        padding: 1rem 0;
+    }
+
+    .design_choices p {
+        margin: 0 2rem;
+        width: 60%;
+        font-size: var(--font-size-16);
     }
 
     /* Animation */
@@ -798,19 +1210,7 @@ p {
         height: auto;
     }
 
-    .project_showcase h5 {
-        font-size: var(--font-size-16);
-        margin-bottom: 1rem;
-    }
-
-    .logo_variantion {
-        flex-direction: column;
-    }
-
-    .logo_variantion img {
-        width: 100%;
-        height: auto;
-    }
+    /* Footer */
 
     .footer {
         padding-left: 50px;
@@ -856,18 +1256,13 @@ p {
         height: 100vh;
     }
 
-    .intro {
-        gap: 2rem;
-        margin: 6rem 2rem 1rem 2rem;
-    }
-
     .project_mockup {
         display: none;
     }
 
     .small_mockup {
         display: block;
-        width: 120%;
+        width: 140%;
     }
 
     .can_name {
@@ -876,6 +1271,7 @@ p {
 
     .can_name_small {
         color: var(--branding-purple);
+        text-align: center;
         display: block;
         font-size: 1.438rem;
         padding-bottom: 1rem;
@@ -905,6 +1301,11 @@ p {
         margin-left: 10rem;
     }
 
+    .intro {
+        gap: 2rem;
+        margin: 6rem 2rem 1rem 2rem;
+    }
+
     .footer {
         padding-left: 50px;
         padding-right: 50px;
@@ -926,7 +1327,6 @@ p {
     .floating-star {
         display: none;
     }
-
     .footer-icons {
         display: flex;
         gap: 5px;
@@ -961,7 +1361,8 @@ p {
 
     .small_mockup {
         display: block;
-        width: 80%;
+        width: 90%;
+        padding-bottom: 0;
     }
 
     .can_name {
@@ -998,7 +1399,7 @@ p {
         height: auto;
         margin-left: 12.5rem;
     }
-    
+
     .footer-icons {
         display: flex;
         gap: 5px;
@@ -1016,6 +1417,7 @@ p {
         width: 50px;
         height: auto;
     }
+
 }
 
 @media (min-width: 600px) and (max-width: 768px) {
@@ -1053,6 +1455,14 @@ p {
         margin-top: 0;
     }
 
+    .can_name {
+        font-size: 2rem
+    }
+
+    .brand_name {
+        font-size: 3rem;
+    }
+
     .project_banner {
         display: flex;
         justify-content: center;
@@ -1063,21 +1473,13 @@ p {
         width: 60%;
     } */
 
-    .can_name {
-        font-size: 2rem
-    }
-
-    .brand_name {
-        font-size: 3rem;
-    }
-
     .project_banner p {
         font-size: var(--font-size-20);
     }
 
     .project_mockup {
         display: block;
-        width: 50%;
+        width: 70%;
     }
 
     /* .curve {
@@ -1096,15 +1498,86 @@ p {
         display: flex;
         flex-direction: row;
         gap: 5rem;
-        margin: 6rem 50px 1rem 50px;
+        margin: 6rem 50px;
     }
 
     .slogan {
         width: 100%;
     }
+    
+    .video-container {
+        width: 100%;
+        max-width: 1000px;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        display: block;
+        margin: auto;
+        padding: 0 50px;
+    }
 
-    .project_showcase {
-        margin: 1rem 50px 0rem 50px;
+    .design_concept {
+        gap: 3rem;
+    }
+
+    .glowfish {
+        padding-right: 50px;
+    }
+
+    .description {
+        padding-right: 0px;
+    }
+
+    /* Main Content */
+
+    .characters_intro {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .narrator_section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 3.5rem 50px;
+    }
+
+    .tools-intro {
+        margin: 0rem 50px -1rem 50px; 
+    }
+
+    .tools-intro p {
+        width: 100%;
+    }
+
+    .characters_intro h4,
+    .tools-intro h4,
+    .background h4,
+    .carousel_title {
+        text-align: left;
+        font-size: var(--font-size-24);
+    }
+
+    .carousel_title {
+        margin: 0rem 50px 1rem 50px;
+    }
+
+    .carousel {
+        margin: 2rem 50px 1rem 50px;
+    }
+
+    .background {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 3.5rem 50px 1rem 50px;
+    }
+    
+    .scene {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0rem 50px 3.5rem 50px;
     }
 
     .footer {
@@ -1150,11 +1623,67 @@ p {
 
     .intro {
         gap: 5rem;
-        margin: 6rem 100px 1rem 100px; 
+        margin: 6rem 100px; 
     }
 
-    .project_showcase {
-        margin: 1rem 100px 0rem 100px;
+    .design_concept {
+        padding: 3rem 0;
+    }
+
+    .description {
+        width: 60%;
+        padding-right: 50px;
+    }
+
+    .demo {
+        padding: 0 100px; 
+    }
+
+    .video-container {
+        width: 100%;
+        max-width: 1000px;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        display: block;
+        margin: auto;
+    }
+
+    /* Main Content */
+
+    .narrator_section {
+        margin: 4rem 100px;
+    }
+
+    .tools-intro {
+        margin: 0rem 100px -1rem 100px; 
+    }
+
+    .tools-intro p {
+        width: 70%;
+    }
+
+    .characters_intro h4,
+    .tools-intro h4,
+    .background h4,
+    .carousel_title {
+        text-align: left;
+        font-size: var(--font-size-24);
+    }
+
+    .carousel_title {
+        margin: 0rem 100px 1rem 100px;
+    }
+
+    .carousel {
+        margin: 2rem 100px 1rem 100px;
+    }
+
+    .background {
+        margin: 4rem 100px 1rem 100px;
+    }
+
+    .scene {
+        margin: 0rem 100px 4rem 100px;
     }
 
     .footer {
@@ -1201,40 +1730,27 @@ p {
     }
 }
 
-@media (min-width: 1920px) and (max-width: 1960px) {
-    .project_banner p {
-        width: 60%;
-    }
-}
-
-@media (min-width: 1961px) and (max-width: 2164px) {
-    .project_banner p {
-        width: 65%;
-    }
-}
-
-@media (min-width: 2165px) and (max-width: 2560px) {
-    .project_banner p {
-        width: 50%;
-    }
-}
-
 @media (min-width: 1920px) and (max-width: 2560px) {
+
+    .demo {
+        margin: 0 240px; 
+    }
 
     .design_reason {
         width: 50%;
     }
 
-    .project_showcase p {
-        font-size: var(--font-size-24);
+    .video-container {
+        width: 100%;
+        max-width: 1400px;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        display: block;
+        margin: auto;
     }
 
-    .project_showcase h5 {
-        font-size: var(--font-size-30);
-    }
-
-    .project_mockup {
-        width: 75%;
+    .description p {
+        width: 85%;
     }
 
     .footer-icons img {
