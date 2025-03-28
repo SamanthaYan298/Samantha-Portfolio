@@ -254,7 +254,6 @@ body.no_scroll {
 }
 
 .item {
-    display: block;
     width: 100%;
     max-width: 140px;
     aspect-ratio: 1/1;
@@ -267,7 +266,7 @@ body.no_scroll {
 .users-color-container img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
   
 .item:nth-child(1) {

@@ -255,8 +255,7 @@ body.no_scroll {
 
 .item {
     display: block;
-    width: 100%;
-    max-width: 140px;
+    width: 140px;
     aspect-ratio: 1/1;
     box-shadow: -2px 2px 8px 2px hsla(0, 0%, 0%, 0.1);
     animation: fadeInItems 0.5s linear 1 forwards;

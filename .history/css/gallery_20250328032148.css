@@ -254,7 +254,6 @@ body.no_scroll {
 }
 
 .item {
-    display: block;
     width: 100%;
     max-width: 140px;
     aspect-ratio: 1/1;
