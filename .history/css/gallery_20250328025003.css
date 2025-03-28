@@ -266,7 +266,7 @@ body.no_scroll {
 .users-color-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
   
 .item:nth-child(1) {
@@ -951,6 +951,7 @@ transition-delay: .03s;
     .users-color-container {
         margin: 0 2rem;
         gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .about_banner {
