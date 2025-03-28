@@ -949,6 +949,7 @@ transition-delay: .03s;
     }
 
     .users-color-container {
+        grid-template-columns: repeat(2, 1fr);
         margin: 0 2rem;
         gap: 10px;
     }
@@ -1068,10 +1069,6 @@ transition-delay: .03s;
 
     .curve {
         top: 2rem;
-    }
-
-    .users-color-container {
-        grid-template-columns: repeat(2, 1fr);
     }
 
     .grid {
