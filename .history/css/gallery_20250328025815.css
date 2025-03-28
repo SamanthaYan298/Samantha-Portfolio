@@ -960,7 +960,7 @@ transition-delay: .03s;
 
     .item {
         width: auto;
-        min-width: 60px;
+        min-width: 80px;
         aspect-ratio: 1/1;
     }
 

@@ -956,11 +956,12 @@ transition-delay: .03s;
     .about_banner {
         padding-top: 0rem;
         height: 100vh;
+        margin: 0 2rem;
     }
 
     .item {
         width: auto;
-        min-width: 60px;
+        min-width: 80px;
         aspect-ratio: 1/1;
     }
 
