@@ -916,6 +916,7 @@ transition-delay: .03s;
     .banner {
         display: flex;
         padding-left: 12%;
+        height: 140vh;
     }
 
     .buttons {
@@ -949,12 +950,13 @@ transition-delay: .03s;
     }
 
     .users-color-container {
+        display: none;
         margin: 0 2rem;
         gap: 10px;
     }
 
     .about_banner {
-        padding-top: 4rem;
+        padding-top: 0rem;
     }
 
     .gallery {
