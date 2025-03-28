@@ -949,16 +949,8 @@ transition-delay: .03s;
     }
 
     .users-color-container {
-        grid-template-columns: repeat(2, 1fr);
         margin: 0 2rem;
         gap: 10px;
-    }
-
-    .item:nth-child(5),
-    .item:nth-child(6),
-    .item:nth-child(9),
-    .item:nth-child(10) {
-        display: none;
     }
 
     .about_banner {
