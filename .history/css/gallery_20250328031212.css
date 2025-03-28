@@ -960,15 +960,13 @@ transition-delay: .03s;
 
     .item {
         width: 50px;
-        max-width: none;
-        aspect-ratio: 1/1;
-        position: relative;
     }
-    
-    .item::before {
-        content: "";
-        display: block;
-        padding-top: 100%;
+
+    .item:nth-child(4),
+    .item:nth-child(5),
+    .item:nth-child(7),
+    .item:nth-child(10) {
+        border-radius: 100px;
     }
 
     .gallery {

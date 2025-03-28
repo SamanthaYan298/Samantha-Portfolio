@@ -958,19 +958,6 @@ transition-delay: .03s;
         height: 100vh;
     }
 
-    .item {
-        width: 50px;
-        max-width: none;
-        aspect-ratio: 1/1;
-        position: relative;
-    }
-    
-    .item::before {
-        content: "";
-        display: block;
-        padding-top: 100%;
-    }
-
     .gallery {
         padding: 2rem;
     }
