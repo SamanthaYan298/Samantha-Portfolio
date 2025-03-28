@@ -968,7 +968,7 @@ transition-delay: .03s;
     .item:nth-child(5),
     .item:nth-child(7),
     .item:nth-child(10) {
-        border-radius: 100px;
+        border-radius: 20px;
     }
 
     .gallery {
