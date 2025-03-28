@@ -933,12 +933,6 @@ transition-delay: .03s;
     .content {
         text-align: left !important;
         padding-left: 8%;
-        gap: 2rem;
-        padding-top: 3rem;
-    }
-
-    .mobile {
-        display: none;
     }
 
     .content h1 {
@@ -960,10 +954,10 @@ transition-delay: .03s;
         gap: 10px;
     }
 
-    .item:nth-child(3),
-    .item:nth-child(4),
-    .item:nth-child(7),
-    .item:nth-child(8) {
+    .item:nth-child(5),
+    .item:nth-child(6),
+    .item:nth-child(9),
+    .item:nth-child(10) {
         display: none;
     }
 

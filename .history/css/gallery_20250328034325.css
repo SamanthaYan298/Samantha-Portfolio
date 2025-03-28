@@ -933,12 +933,7 @@ transition-delay: .03s;
     .content {
         text-align: left !important;
         padding-left: 8%;
-        gap: 2rem;
-        padding-top: 3rem;
-    }
-
-    .mobile {
-        display: none;
+        gap: 1rem;
     }
 
     .content h1 {
