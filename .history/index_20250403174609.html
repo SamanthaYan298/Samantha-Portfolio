@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Samantha Yan, a graphic and UI/UX designer specializing in creating meaningful and impactful designs.">
+    <meta name="author" content="Samantha Yan">
+    <meta name="keywords" content="Samantha Yan, graphic design, UI/UX design, portfolio">
+
+    <title>Yisha Samantha Yan</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Font Embed Code - Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Embed Code - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html"><img class="logo" alt="logo" src="./images/logo.png" /></a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="home-link">Home</a></li>
+            <li><a href="projects.html" class="projects-link">Projects</a></li>
+            <li><a href="gallery.html" class="gallery-link">Gallery</a></li>
+            <li><a href="about.html" class="about-link">About</a></li>
+        </ul>
+    </header>
+
+    <div class="menu">
+        <a href="index.html"><img class="menu-logo" alt="logo" src="./images/logo.png" /></a>
+        <div class="dropdown-menu">
+            <button class="hamburger" onclick="toggleMenu()">
+                <img id="menu-icon" alt="Hamburger Menu Icon" src="./images/menu.png" />
+            </button>
+            <div class="menu-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html" class="projects-link">Projects</a></li>
+                    <li><a href="gallery.html" class="projects-link">Gallery</a></li>
+                    <li><a href="about.html" class="about-link">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <main>
+    <section class="banner">
+        <div class="content">
+            <h4 class="welcome">Hey! You Found Me!</h4>
+            <h1 class="name"><span class="highlight">I'm</span> Samantha Yan</h1>
+            <p class="position">Graphic and UI & UX Designer</p>
+        </div>
+        <div class="elements">
+            <img alt="ribbon" class="ribbon" src="./images/ribbon.webp"/>
+            <img alt="ribbon" class="circle" src="./images/circle.png"/>
+            <img alt="stars" class="star_big" src="./images/star_big.png"/>
+            <img alt="stars" class="star_small" src="./images/star_small.png"/>
+        </div>
+    </section>
+    
+    <section class="main-content">
+        <div class="curve-section">
+            <div class="curve"></div>
+            <div class="projects fade-in">
+                <svg viewBox="0 0 784.11 815.53" class="small">
+                    <path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 
+                    207.96,29.37 371.12,197.68 392.05,407.74 
+                    20.93,-210.06 184.09,-378.37 392.05,-407.74 
+                    -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0 fill_title"/>
+                </svg>
+                <svg viewBox="0 0 784.11 815.53" class="large">
+                    <path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 
+                    207.96,29.37 371.12,197.68 392.05,407.74 
+                    20.93,-210.06 184.09,-378.37 392.05,-407.74 
+                    -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0 fill_title"/>
+                </svg>
+                <h2>Featured Projects</h2>
+                <svg viewBox="0 0 784.11 815.53" class="large">
+                <path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 
+                207.96,29.37 371.12,197.68 392.05,407.74 
+                20.93,-210.06 184.09,-378.37 392.05,-407.74 
+                -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"/>
+                </svg>
+                <svg viewBox="0 0 784.11 815.53" class="small">
+                    <path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 
+                    207.96,29.37 371.12,197.68 392.05,407.74 
+                    20.93,-210.06 184.09,-378.37 392.05,-407.74 
+                    -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-showcase" id="projects">
+        <div class="display reverse fade-in responsive">
+            <div class="projects-info">
+                <div class="projects-info-layout">
+                    <h3>Clotho</h3>
+                    <h4 class="types">Wardrobe Assistant App</h4>
+                    <h4  class="roles">UI & UX Designer | Front-end Developer</h4>
+                    <p>February &ndash; May 2024</p>
+                </div>
+                <div class="buttons">
+                    <a href="clotho.html" class="btn">View Project
+                        <div class="star-1">
+                            <svg viewBox="0 0 784.11 815.53">
+                                <path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 
+                                207.96,29.37 371.12,197.68 392.05,407.74 
+                                20.93,-210.06 184.09,-378.37 392.05,-407.74 
+                                -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"/>
+                            </svg>
+                        </div>
+                        <div class="star-2">
+                            <svg viewBox="0 0 784.11 815.53">
+                                <path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 
+                                207.96,29.37 371.12,197.68 392.05,407.74 
+                                20.93,-210.06 184.09,-378.37 392.05,-407.74 
+                                -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"/>
+                            </svg>
+                        </div>
+                        <div class="star-3">
+                            <svg viewBox="0 0 784.11 815.53">
+                                <path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 
+                                207.96,29.37 371.12,197.68 392.05,407.74 
+                                20.93,-210.06 184.09,-378.37 392.05,-407.74 
+                                -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <img src="./images/clotho_preview.webp" alt="Clotho App" class="project-images"/>
+        </div>
+
+        <div class="display fade-in responsive">
+            <div class="projects-info">
+                <div class="projects-info-layout">
+                    <h3>Blissy<br>Sparkling Water</h3>
+                    <h4 class="types">Beverage Can Design</h4>
+                    <h4  class="roles">Graphic Designer</h4>
+                    <p>November 2024</p>
+                </div>
+                <div class="buttons">
+                    <a href="blissy.html" class="btn">View Project
+                        <div class="star-1">
+                            <svg viewBox="0 0 784.11 815.53">
+                                <path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 
+                                207.96,29.37 371.12,197.68 392.05,407.74 
+                                20.93,-210.06 184.09,-378.37 392.05,-407.74 
+                                -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"/>
+                            </svg>
+                        </div>
+                        <div class="star-2">
+                            <svg viewBox="0 0 784.11 815.53">
+                                <path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 
+                                207.96,29.37 371.12,197.68 392.05,407.74 
+                                20.93,-210.06 184.09,-378.37 392.05,-407.74 
+                                -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"/>
+                            </svg>
+                        </div>
+                        <div class="star-3">
+                            <svg viewBox="0 0 784.11 815.53">
+                                <path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 
+                                207.96,29.37 371.12,197.68 392.05,407.74 
+                                20.93,-210.06 184.09,-378.37 392.05,-407.74 
+                                -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <img src="./images/can_preview.webp" alt="Blissy App Mockup" class="project-images"/>
+        </div>
+        
+        <div class="display reverse fade-in responsive">
+            <div class="projects-info">
+                <div class="projects-info-layout">
+                    <h3>Finding<br>Mr. Glowfish</h3>
+                    <h4 class="types">Children Interactive eBook</h4>
+                    <h4  class="roles">Graphic Designer</h4>
+                    <p>October &ndash; December 2024</p>
+                </div>
+                <div class="buttons">
+                    <a href="finding_mr_glowfish.html" class="btn">View Project
+                        <div class="star-1">
+                            <svg viewBox="0 0 784.11 815.53">
+                                <path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 
+                                207.96,29.37 371.12,197.68 392.05,407.74 
+                                20.93,-210.06 184.09,-378.37 392.05,-407.74 
+                                -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"/>
+                            </svg>
+                        </div>
+                        <div class="star-2">
+                            <svg viewBox="0 0 784.11 815.53">
+                                <path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 
+                                207.96,29.37 371.12,197.68 392.05,407.74 
+                                20.93,-210.06 184.09,-378.37 392.05,-407.74 
+                                -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"/>
+                            </svg>
+                        </div>
+                        <div class="star-3">
+                            <svg viewBox="0 0 784.11 815.53">
+                                <path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 
+                                207.96,29.37 371.12,197.68 392.05,407.74 
+                                20.93,-210.06 184.09,-378.37 392.05,-407.74 
+                                -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <img src="./images/godot_preview.webp" alt="Children's Book" class="project-images"/>
+        </div>
+
+        <div class="display fade-in responsive">
+            <div class="projects-info">
+                <div class="projects-info-layout">
+                    <h3>Civica</h3>
+                    <h4 class="types">Legal Assistant App</h4>
+                    <h4 class="roles">
+                        Graphic and UI & UX Designer<br>
+                        Front-end Developer
+                    </h4>
+                    <p>September &ndash; December 2024</p>
+                </div>
+                <div class="buttons">
+                    <a href="civica.html" class="btn">View Project
+                        <div class="star-1">
+                            <svg viewBox="0 0 784.11 815.53">
+                                <path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 
+                                207.96,29.37 371.12,197.68 392.05,407.74 
+                                20.93,-210.06 184.09,-378.37 392.05,-407.74 
+                                -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"/>
+                            </svg>
+                        </div>
+                        <div class="star-2">
+                            <svg viewBox="0 0 784.11 815.53">
+                                <path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 
+                                207.96,29.37 371.12,197.68 392.05,407.74 
+                                20.93,-210.06 184.09,-378.37 392.05,-407.74 
+                                -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"/>
+                            </svg>
+                        </div>
+                        <div class="star-3">
+                            <svg viewBox="0 0 784.11 815.53">
+                                <path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 
+                                207.96,29.37 371.12,197.68 392.05,407.74 
+                                20.93,-210.06 184.09,-378.37 392.05,-407.74 
+                                -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <img src="./images/civica_preview.webp" alt="Civica App Mockup" class="project-images"/>
+        </div>
+    </section>
+
+    <div class="floating-star" onclick="scrollToTop()">
+        <img src="./images/back.webp" alt="Back To Top Button"/>
+    </div>
+    
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h2 class="footer-title">Start Projects with Samantha</h2>
+            <p>
+                I'm passionate about helping you create something meaningful. <br>Contact me, 
+                and together we can make your ideas come through.
+            </p>
+          <div class="footer-icons">
+            <a href="https://www.linkedin.com/in/samantha-yyan/" target="_blank" rel="noopener noreferrer">
+              <img src="./images/linkedin.png" alt="LinkedIn Icon" />
+            </a>
+            <a href="mailto:yisha-y@hotmail.com" aria-label="Send me an email">
+              <img src="./images/email.png" alt="Email Icon" />
+            </a>
+            <a href="https://github.com/SamanthaYan298" target="_blank" rel="noopener noreferrer">
+                <img src="./images/github.png" alt="Github Icon" />
+            </a>
+            <a href="https://www.youtube.com/playlist?list=PLrgL16kwFm-0g5pzTNWgt6QvwPB_-rD5s" target="_blank" rel="noopener noreferrer">
+                <img src="./images/youtube.png" alt="Youtube Icon" />
+            </a>
+          </div>
+        </div>
+        <p class="copyright">&copy; Yisha Samantha Yan | 2025</p>
+        <nav class="footer-nav">
+            <ul>
+            <li><a href="index.html" class="home-link glow-button">Home</a></li>
+            <li><a href="projects.html" class="projects-link glow-button">Projects</a></li>
+            <li><a href="gallery.html" class="gallery-link glow-button">Gallery</a></li>
+            <li><a href="about.html" class="about-link glow-button">About</a></li>
+            </ul>
+        </nav>
+      </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
